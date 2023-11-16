@@ -43,14 +43,14 @@ Este projeto tem como objetivo desenvolver um serviço de monitoramento de KPIs 
 Objetivo específicos : 
 
 1 - Criação do ambiente para obtenção de dados controlados.
-	1.1  Criação do ambiente para extração dos dados.
-	1.2 Implementação do Prometheus para as KPIs e Grafana para criação de Dashboards
-	1.3 Configuração funcional do Prometheus e Grafana e coleta das métricas
+ 1.1  Criação do ambiente para extração dos dados.
+ 1.2 Implementação do Prometheus para as KPIs e Grafana para criação de Dashboards
+ 1.3 Configuração funcional do Prometheus e Grafana e coleta das métricas
 2 - Análise dos dados e preparação do ambiente para retirada do QoE
-	2.1 Análise do amostral do dados para preparação do ambiente
-	2.2 Criação do ambiente e o tratamento do vídeo para realizar a prova de conceitos
+ 2.1 Análise do amostral do dados para preparação do ambiente
+ 2.2 Criação do ambiente e o tratamento do vídeo para realizar a prova de conceitos
 3 - Retirada das métricas de QoE e visualizar como está a percepção do usuário
-	3.1 captura de métricas de QoE e provisionamento de SSIM mapeado para MOS
+ 3.1 captura de métricas de QoE e provisionamento de SSIM mapeado para MOS
 
 Sprints:
 
