@@ -1,0 +1,25 @@
+
+* 0 * * * python3 alteracao_rede.py s1-eth2 delay 15ms 5ms loss 3%
+* 1 * * * python3 alteracao_rede.py s1-eth2 delay 10ms 10ms loss 1%
+* 2 * * * python3 alteracao_rede.py s1-eth2 delay 20ms 20ms loss 2%
+* 3 * * * python3 alteracao-rede.py s1-eth2 delay 30ms 30ms loss 3%
+* 4 * * * python3 alteracao-rede.py s1-eth2 delay 40ms 40ms loss 4%
+* 5 * * * python3 alteracao-rede.py s1-eth2 delay 50ms 50ms loss 5%
+* 6 * * * python3 alteracao-rede.py s1-eth2 delay 50ms 20ms loss 1%
+* 7 * * * python3 alteracao-rede.py s1-eth2 delay 10ms 20ms loss 4%
+* 8 * * * python3 alteracao-rede.py s1-eth2 delay 22ms 10ms loss 1%
+* 9 * * * python3 alteracao-rede.py s1-eth2 delay 15ms 24ms loss 2%
+* 10 * * * python3 alteracao-rede.py s1-eth2 delay 3ms 45ms loss 4%
+* 11 * * * python3 alteracao-rede.py s1-eth2 delay 21ms 35ms loss 2%
+* 12 * * * python3 alteracao-rede.py s1-eth2 delay 30ms 30ms loss 5%
+* 13 * * * python3 alteracao-rede.py s1-eth2 delay 3ms 40ms loss 2%
+* 14 * * * python3 alteracao-rede.py s1-eth2 delay 2ms 45ms loss 5%
+* 15 * * * python3 alteracao-rede.py s1-eth2 delay 30ms 33ms loss 3%
+* 16 * * * python3 alteracao-rede.py s1-eth2 delay 12ms 44ms loss 1%
+* 17 * * * python3 alteracao-rede.py s1-eth2 delay 31ms 10ms loss 3%
+* 18 * * * python3 alteracao-rede.py s1-eth2 delay 14ms 45ms loss 5%
+* 19 * * * python3 alteracao-rede.py s1-eth2 delay 2ms 30ms loss 3%
+* 20 * * * python3 alteracao-rede.py s1-eth2 delay 15ms 24ms loss 4%
+* 21 * * * python3 alteracao-rede.py s1-eth2 delay 30ms 31ms loss 5%
+* 22 * * * python3 alteracao-rede.py s1-eth2 delay 15ms 4ms loss 4%
+* 23 * * * python3 alteracao-rede.py s1-eth2 delay 30ms 20ms loss 2%
