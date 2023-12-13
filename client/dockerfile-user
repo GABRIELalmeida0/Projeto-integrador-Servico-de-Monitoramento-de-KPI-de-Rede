@@ -1,0 +1,12 @@
+FROM python:3.8
+USER root
+
+WORKDIR network
+COPY alteracao_rede.py .
+COPY crontab.cron .
+RUN apt-get update && apt-get install -y net-tools cron vim iputils-ping iproute2
+
+RUN crontab -u root crontab.cron
+
+
+CMD /bin/bash 

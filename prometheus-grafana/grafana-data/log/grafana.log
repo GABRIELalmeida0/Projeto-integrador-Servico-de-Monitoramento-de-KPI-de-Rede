@@ -1,0 +1,186 @@
+logger=settings t=2023-12-13T20:08:51.408488151Z level=info msg="Starting Grafana" version=10.2.2 commit=161e3cac5075540918e3a39004f2364ad104d5bb branch=HEAD compiled=2023-11-20T12:28:00Z
+logger=settings t=2023-12-13T20:08:51.409194003Z level=info msg="Config loaded from" file=/usr/share/grafana/conf/defaults.ini
+logger=settings t=2023-12-13T20:08:51.409279618Z level=info msg=Target target=[all]
+logger=settings t=2023-12-13T20:08:51.409340225Z level=info msg="Path Home" path=/usr/share/grafana
+logger=settings t=2023-12-13T20:08:51.40936161Z level=info msg="Path Data" path=/usr/share/grafana/data
+logger=settings t=2023-12-13T20:08:51.409383602Z level=info msg="Path Logs" path=/usr/share/grafana/data/log
+logger=settings t=2023-12-13T20:08:51.409398141Z level=info msg="Path Plugins" path=/usr/share/grafana/data/plugins
+logger=settings t=2023-12-13T20:08:51.409412444Z level=info msg="Path Provisioning" path=/usr/share/grafana/conf/provisioning
+logger=settings t=2023-12-13T20:08:51.409432892Z level=info msg="App mode production"
+logger=sqlstore t=2023-12-13T20:08:51.409952376Z level=info msg="Connecting to DB" dbtype=sqlite3
+logger=migrator t=2023-12-13T20:08:51.410980415Z level=info msg="Starting DB migrations"
+logger=migrator t=2023-12-13T20:08:51.435142924Z level=info msg="migrations completed" performed=0 skipped=517 duration=798.694µs
+logger=secrets t=2023-12-13T20:08:51.436848456Z level=info msg="Envelope encryption state" enabled=true currentprovider=secretKey.v1
+logger=plugins.registration t=2023-12-13T20:08:51.53347918Z level=info msg="Plugin registered" pluginId=input
+logger=query_data t=2023-12-13T20:08:51.538262518Z level=info msg="Query Service initialization"
+logger=live.push_http t=2023-12-13T20:08:51.545585425Z level=info msg="Live Push Gateway initialization"
+logger=infra.usagestats.collector t=2023-12-13T20:08:55.250167889Z level=info msg="registering usage stat providers" usageStatsProvidersLen=2
+logger=provisioning.alerting t=2023-12-13T20:08:55.251384646Z level=info msg="starting to provision alerting"
+logger=provisioning.alerting t=2023-12-13T20:08:55.251456713Z level=info msg="finished to provision alerting"
+logger=http.server t=2023-12-13T20:08:55.259432362Z level=info msg="HTTP Server Listen" address=[::]:3000 protocol=http subUrl= socket=
+logger=grafanaStorageLogger t=2023-12-13T20:08:55.259907553Z level=info msg="Storage starting"
+logger=ngalert.state.manager t=2023-12-13T20:08:55.264052928Z level=info msg="Warming state cache for startup"
+logger=ngalert.migration t=2023-12-13T20:08:55.321032014Z level=info msg=Starting
+logger=ngalert.migration t=2023-12-13T20:08:55.32195098Z level=info msg="No migrations to run"
+logger=grafana.update.checker t=2023-12-13T20:08:55.347403366Z level=info msg="Update check succeeded" duration=95.736489ms
+logger=ngalert.state.manager t=2023-12-13T20:08:55.486174975Z level=info msg="State cache has been initialized" states=0 duration=222.116125ms
+logger=ngalert.scheduler t=2023-12-13T20:08:55.486273711Z level=info msg="Starting scheduler" tickInterval=10s
+logger=ticker t=2023-12-13T20:08:55.487309255Z level=info msg=starting first_tick=2023-12-13T20:09:00Z
+logger=ngalert.multiorg.alertmanager t=2023-12-13T20:08:55.48695671Z level=info msg="Starting MultiOrg Alertmanager"
+logger=plugins.update.checker t=2023-12-13T20:08:55.628047822Z level=info msg="Update check succeeded" duration=375.560616ms
+logger=infra.usagestats t=2023-12-13T20:09:25.270722831Z level=info msg="Usage stats are ready to report"
+logger=server t=2023-12-13T20:10:52.853277782Z level=info msg="Shutdown started" reason="System signal: terminated"
+logger=tracing t=2023-12-13T20:10:52.85350712Z level=info msg="Closing tracing"
+logger=ticker t=2023-12-13T20:10:52.854249523Z level=info msg=stopped last_tick=2023-12-13T20:10:50Z
+logger=settings t=2023-12-13T20:11:19.968796711Z level=info msg="Starting Grafana" version=10.2.2 commit=161e3cac5075540918e3a39004f2364ad104d5bb branch=HEAD compiled=2023-11-20T12:28:00Z
+logger=settings t=2023-12-13T20:11:19.969391702Z level=info msg="Config loaded from" file=/usr/share/grafana/conf/defaults.ini
+logger=settings t=2023-12-13T20:11:19.969469133Z level=info msg=Target target=[all]
+logger=settings t=2023-12-13T20:11:19.969506941Z level=info msg="Path Home" path=/usr/share/grafana
+logger=settings t=2023-12-13T20:11:19.969527642Z level=info msg="Path Data" path=/usr/share/grafana/data
+logger=settings t=2023-12-13T20:11:19.969547501Z level=info msg="Path Logs" path=/usr/share/grafana/data/log
+logger=settings t=2023-12-13T20:11:19.969565093Z level=info msg="Path Plugins" path=/usr/share/grafana/data/plugins
+logger=settings t=2023-12-13T20:11:19.969583435Z level=info msg="Path Provisioning" path=/usr/share/grafana/conf/provisioning
+logger=settings t=2023-12-13T20:11:19.96960259Z level=info msg="App mode production"
+logger=sqlstore t=2023-12-13T20:11:19.970133266Z level=info msg="Connecting to DB" dbtype=sqlite3
+logger=migrator t=2023-12-13T20:11:19.971087742Z level=info msg="Starting DB migrations"
+logger=migrator t=2023-12-13T20:11:19.996419339Z level=info msg="migrations completed" performed=0 skipped=517 duration=1.024362ms
+logger=secrets t=2023-12-13T20:11:19.998459654Z level=info msg="Envelope encryption state" enabled=true currentprovider=secretKey.v1
+logger=plugins.registration t=2023-12-13T20:11:20.109220024Z level=info msg="Plugin registered" pluginId=input
+logger=query_data t=2023-12-13T20:11:20.114787345Z level=info msg="Query Service initialization"
+logger=live.push_http t=2023-12-13T20:11:20.120190563Z level=info msg="Live Push Gateway initialization"
+logger=infra.usagestats.collector t=2023-12-13T20:11:23.894508475Z level=info msg="registering usage stat providers" usageStatsProvidersLen=2
+logger=provisioning.alerting t=2023-12-13T20:11:23.896052554Z level=info msg="starting to provision alerting"
+logger=provisioning.alerting t=2023-12-13T20:11:23.896143874Z level=info msg="finished to provision alerting"
+logger=ngalert.state.manager t=2023-12-13T20:11:23.896645861Z level=info msg="Warming state cache for startup"
+logger=http.server t=2023-12-13T20:11:23.903539138Z level=info msg="HTTP Server Listen" address=[::]:3000 protocol=http subUrl= socket=
+logger=grafanaStorageLogger t=2023-12-13T20:11:23.904297833Z level=info msg="Storage starting"
+logger=ngalert.migration t=2023-12-13T20:11:23.989104797Z level=info msg=Starting
+logger=ngalert.migration t=2023-12-13T20:11:23.990044895Z level=info msg="No migrations to run"
+logger=ngalert.state.manager t=2023-12-13T20:11:24.050009289Z level=info msg="State cache has been initialized" states=0 duration=153.365751ms
+logger=ngalert.scheduler t=2023-12-13T20:11:24.050593251Z level=info msg="Starting scheduler" tickInterval=10s
+logger=ticker t=2023-12-13T20:11:24.05109506Z level=info msg=starting first_tick=2023-12-13T20:11:30Z
+logger=ngalert.multiorg.alertmanager t=2023-12-13T20:11:24.051493262Z level=info msg="Starting MultiOrg Alertmanager"
+logger=grafana.update.checker t=2023-12-13T20:11:24.106076236Z level=info msg="Update check succeeded" duration=207.15165ms
+logger=plugins.update.checker t=2023-12-13T20:11:24.308113143Z level=info msg="Update check succeeded" duration=408.111767ms
+logger=server t=2023-12-13T20:11:40.591908661Z level=info msg="Shutdown started" reason="System signal: terminated"
+logger=tracing t=2023-12-13T20:11:40.592275767Z level=info msg="Closing tracing"
+logger=ticker t=2023-12-13T20:11:40.593119045Z level=info msg=stopped last_tick=2023-12-13T20:11:40Z
+logger=settings t=2023-12-13T20:12:26.831982168Z level=info msg="Starting Grafana" version=10.2.2 commit=161e3cac5075540918e3a39004f2364ad104d5bb branch=HEAD compiled=2023-11-20T12:28:00Z
+logger=settings t=2023-12-13T20:12:26.832589872Z level=info msg="Config loaded from" file=/usr/share/grafana/conf/defaults.ini
+logger=settings t=2023-12-13T20:12:26.832678616Z level=info msg=Target target=[all]
+logger=settings t=2023-12-13T20:12:26.832718537Z level=info msg="Path Home" path=/usr/share/grafana
+logger=settings t=2023-12-13T20:12:26.832748497Z level=info msg="Path Data" path=/usr/share/grafana/data
+logger=settings t=2023-12-13T20:12:26.832770714Z level=info msg="Path Logs" path=/usr/share/grafana/data/log
+logger=settings t=2023-12-13T20:12:26.832819195Z level=info msg="Path Plugins" path=/usr/share/grafana/data/plugins
+logger=settings t=2023-12-13T20:12:26.832841584Z level=info msg="Path Provisioning" path=/usr/share/grafana/conf/provisioning
+logger=settings t=2023-12-13T20:12:26.832869575Z level=info msg="App mode production"
+logger=sqlstore t=2023-12-13T20:12:26.83355437Z level=info msg="Connecting to DB" dbtype=sqlite3
+logger=migrator t=2023-12-13T20:12:26.834650103Z level=info msg="Starting DB migrations"
+logger=migrator t=2023-12-13T20:12:26.859890798Z level=info msg="migrations completed" performed=0 skipped=517 duration=756.081µs
+logger=secrets t=2023-12-13T20:12:26.861819987Z level=info msg="Envelope encryption state" enabled=true currentprovider=secretKey.v1
+logger=plugins.registration t=2023-12-13T20:12:26.95432444Z level=info msg="Plugin registered" pluginId=input
+logger=query_data t=2023-12-13T20:12:26.959495826Z level=info msg="Query Service initialization"
+logger=live.push_http t=2023-12-13T20:12:27.003631675Z level=info msg="Live Push Gateway initialization"
+logger=infra.usagestats.collector t=2023-12-13T20:12:30.636315864Z level=info msg="registering usage stat providers" usageStatsProvidersLen=2
+logger=provisioning.alerting t=2023-12-13T20:12:30.637731234Z level=info msg="starting to provision alerting"
+logger=provisioning.alerting t=2023-12-13T20:12:30.637817318Z level=info msg="finished to provision alerting"
+logger=ngalert.state.manager t=2023-12-13T20:12:30.638975477Z level=info msg="Warming state cache for startup"
+logger=ngalert.state.manager t=2023-12-13T20:12:30.64030153Z level=info msg="State cache has been initialized" states=0 duration=1.317173ms
+logger=ngalert.scheduler t=2023-12-13T20:12:30.641004264Z level=info msg="Starting scheduler" tickInterval=10s
+logger=ticker t=2023-12-13T20:12:30.641692127Z level=info msg=starting first_tick=2023-12-13T20:12:40Z
+logger=ngalert.multiorg.alertmanager t=2023-12-13T20:12:30.642753223Z level=info msg="Starting MultiOrg Alertmanager"
+logger=http.server t=2023-12-13T20:12:30.644233144Z level=info msg="HTTP Server Listen" address=[::]:3000 protocol=http subUrl= socket=
+logger=grafanaStorageLogger t=2023-12-13T20:12:30.652663358Z level=info msg="Storage starting"
+logger=grafana.update.checker t=2023-12-13T20:12:30.725362788Z level=info msg="Update check succeeded" duration=81.117744ms
+logger=ngalert.migration t=2023-12-13T20:12:30.916093647Z level=info msg=Starting
+logger=ngalert.migration t=2023-12-13T20:12:30.918137996Z level=info msg="No migrations to run"
+logger=plugins.update.checker t=2023-12-13T20:12:30.966770685Z level=info msg="Update check succeeded" duration=320.249439ms
+logger=server t=2023-12-13T20:12:32.286779939Z level=info msg="Shutdown started" reason="System signal: terminated"
+logger=ticker t=2023-12-13T20:12:32.287131265Z level=info msg=stopped last_tick=2023-12-13T20:12:30Z
+logger=tracing t=2023-12-13T20:12:32.287231547Z level=info msg="Closing tracing"
+logger=settings t=2023-12-13T20:14:46.87549067Z level=info msg="Starting Grafana" version=10.2.2 commit=161e3cac5075540918e3a39004f2364ad104d5bb branch=HEAD compiled=2023-11-20T12:28:00Z
+logger=settings t=2023-12-13T20:14:46.876100844Z level=info msg="Config loaded from" file=/usr/share/grafana/conf/defaults.ini
+logger=settings t=2023-12-13T20:14:46.876182186Z level=info msg=Target target=[all]
+logger=settings t=2023-12-13T20:14:46.876225859Z level=info msg="Path Home" path=/usr/share/grafana
+logger=settings t=2023-12-13T20:14:46.876251532Z level=info msg="Path Data" path=/usr/share/grafana/data
+logger=settings t=2023-12-13T20:14:46.87627142Z level=info msg="Path Logs" path=/usr/share/grafana/data/log
+logger=settings t=2023-12-13T20:14:46.876291603Z level=info msg="Path Plugins" path=/usr/share/grafana/data/plugins
+logger=settings t=2023-12-13T20:14:46.876317442Z level=info msg="Path Provisioning" path=/usr/share/grafana/conf/provisioning
+logger=settings t=2023-12-13T20:14:46.876337617Z level=info msg="App mode production"
+logger=sqlstore t=2023-12-13T20:14:46.877048204Z level=info msg="Connecting to DB" dbtype=sqlite3
+logger=migrator t=2023-12-13T20:14:46.878493527Z level=info msg="Starting DB migrations"
+logger=migrator t=2023-12-13T20:14:46.904654331Z level=info msg="migrations completed" performed=0 skipped=517 duration=944.121µs
+logger=secrets t=2023-12-13T20:14:46.906458597Z level=info msg="Envelope encryption state" enabled=true currentprovider=secretKey.v1
+logger=plugins.registration t=2023-12-13T20:14:46.987079243Z level=info msg="Plugin registered" pluginId=input
+logger=query_data t=2023-12-13T20:14:46.991286582Z level=info msg="Query Service initialization"
+logger=live.push_http t=2023-12-13T20:14:46.999495597Z level=info msg="Live Push Gateway initialization"
+logger=infra.usagestats.collector t=2023-12-13T20:14:50.756341452Z level=info msg="registering usage stat providers" usageStatsProvidersLen=2
+logger=provisioning.alerting t=2023-12-13T20:14:50.757791805Z level=info msg="starting to provision alerting"
+logger=provisioning.alerting t=2023-12-13T20:14:50.757870922Z level=info msg="finished to provision alerting"
+logger=grafanaStorageLogger t=2023-12-13T20:14:50.758254842Z level=info msg="Storage starting"
+logger=ngalert.state.manager t=2023-12-13T20:14:50.768920409Z level=info msg="Warming state cache for startup"
+logger=http.server t=2023-12-13T20:14:50.76915971Z level=info msg="HTTP Server Listen" address=[::]:3000 protocol=http subUrl= socket=
+logger=ngalert.migration t=2023-12-13T20:14:50.895649709Z level=info msg=Starting
+logger=ngalert.migration t=2023-12-13T20:14:50.896993257Z level=info msg="No migrations to run"
+logger=grafana.update.checker t=2023-12-13T20:14:50.968176713Z level=info msg="Update check succeeded" duration=187.711431ms
+logger=ngalert.state.manager t=2023-12-13T20:14:51.082835306Z level=info msg="State cache has been initialized" states=0 duration=313.905512ms
+logger=ngalert.scheduler t=2023-12-13T20:14:51.08316116Z level=info msg="Starting scheduler" tickInterval=10s
+logger=ticker t=2023-12-13T20:14:51.083593204Z level=info msg=starting first_tick=2023-12-13T20:15:00Z
+logger=ngalert.multiorg.alertmanager t=2023-12-13T20:14:51.083426823Z level=info msg="Starting MultiOrg Alertmanager"
+logger=plugins.update.checker t=2023-12-13T20:14:51.109108429Z level=info msg="Update check succeeded" duration=350.882006ms
+logger=authn.service t=2023-12-13T20:15:33.424758271Z level=warn msg="Failed to authenticate request" client=auth.client.session error="user token not found"
+logger=context userId=0 orgId=0 uname= t=2023-12-13T20:15:33.425010408Z level=info msg="Request Completed" method=GET path=/ status=302 remote_addr=10.0.0.1 time_ms=1 duration=1.332067ms size=29 referer= handler=/
+logger=authn.service t=2023-12-13T20:15:33.444746707Z level=warn msg="Failed to authenticate request" client=auth.client.session error="user token not found"
+logger=http.server t=2023-12-13T20:15:33.45201023Z level=error msg="Failed to parse user ID" error="identifier is not initialized"
+logger=infra.usagestats t=2023-12-13T20:15:34.776994385Z level=info msg="Usage stats are ready to report"
+logger=authn.service t=2023-12-13T20:15:35.366262234Z level=warn msg="Failed to authenticate request" client=auth.client.session error="user token not found"
+logger=context userId=0 orgId=0 uname= t=2023-12-13T20:15:35.366417353Z level=warn msg=Unauthorized error="user token not found" remote_addr=10.0.0.1 traceID=
+logger=context userId=0 orgId=0 uname= t=2023-12-13T20:15:35.366515312Z level=info msg="Request Completed" method=GET path=/api/live/ws status=401 remote_addr=10.0.0.1 time_ms=1 duration=1.236214ms size=40 referer= handler=/api/live/ws
+logger=authn.service t=2023-12-13T20:15:36.418121547Z level=warn msg="Failed to authenticate request" client=auth.client.session error="user token not found"
+logger=context userId=0 orgId=0 uname= t=2023-12-13T20:15:36.418447591Z level=warn msg=Unauthorized error="user token not found" remote_addr=10.0.0.1 traceID=
+logger=context userId=0 orgId=0 uname= t=2023-12-13T20:15:36.418622612Z level=info msg="Request Completed" method=GET path=/api/live/ws status=401 remote_addr=10.0.0.1 time_ms=2 duration=2.205298ms size=40 referer= handler=/api/live/ws
+logger=authn.service t=2023-12-13T20:15:37.788761681Z level=warn msg="Failed to authenticate request" client=auth.client.session error="user token not found"
+logger=context userId=0 orgId=0 uname= t=2023-12-13T20:15:37.788992837Z level=warn msg=Unauthorized error="user token not found" remote_addr=10.0.0.1 traceID=
+logger=context userId=0 orgId=0 uname= t=2023-12-13T20:15:37.789190882Z level=info msg="Request Completed" method=GET path=/api/live/ws status=401 remote_addr=10.0.0.1 time_ms=1 duration=1.865938ms size=40 referer= handler=/api/live/ws
+logger=authn.service t=2023-12-13T20:15:39.406580457Z level=warn msg="Failed to authenticate request" client=auth.client.session error="user token not found"
+logger=context userId=0 orgId=0 uname= t=2023-12-13T20:15:39.40671273Z level=warn msg=Unauthorized error="user token not found" remote_addr=10.0.0.1 traceID=
+logger=context userId=0 orgId=0 uname= t=2023-12-13T20:15:39.406796673Z level=info msg="Request Completed" method=GET path=/api/live/ws status=401 remote_addr=10.0.0.1 time_ms=1 duration=1.142363ms size=40 referer= handler=/api/live/ws
+logger=authn.service t=2023-12-13T20:15:40.577299043Z level=warn msg="Failed to authenticate request" client=auth.client.session error="user token not found"
+logger=context userId=1 orgId=1 uname=admin t=2023-12-13T20:15:42.38406211Z level=info msg="Request Completed" method=GET path=/api/live/ws status=-1 remote_addr=10.0.0.1 time_ms=51 duration=51.06643ms size=0 referer= handler=/api/live/ws
+logger=context userId=1 orgId=1 uname=admin t=2023-12-13T20:15:44.25618516Z level=info msg="Request Completed" method=GET path=/api/live/ws status=-1 remote_addr=10.0.0.1 time_ms=3 duration=3.645715ms size=0 referer= handler=/api/live/ws
+logger=context userId=1 orgId=1 uname=admin t=2023-12-13T20:16:21.223383854Z level=error msg="Internal server error" error="[plugin.downstreamError] client: failed to call resources: error querying resource: Get \"http://172.17.0.3:9090/api/v1/metadata\": context canceled" remote_addr=10.0.0.1 traceID=
+logger=context userId=1 orgId=1 uname=admin t=2023-12-13T20:16:21.22356467Z level=error msg="Request Completed" method=GET path=/api/datasources/uid/d2938061-83aa-4fa3-a6ff-10982e24675a/resources/api/v1/metadata status=500 remote_addr=10.0.0.1 time_ms=7865 duration=7.865741331s size=116 referer="http://10.0.0.5:3000/dashboard/new?editPanel=1&orgId=1&utm_source=grafana_gettingstarted" handler=/api/datasources/uid/:uid/resources/*
+logger=context userId=1 orgId=1 uname=admin t=2023-12-13T20:16:31.334475376Z level=error msg="Internal server error" error="[plugin.downstreamError] client: failed to call resources: error querying resource: Get \"http://172.17.0.3:9090/api/v1/label/__name__/values?start=1702476960&end=1702498620\": dial tcp 172.17.0.3:9090: i/o timeout" remote_addr=10.0.0.1 traceID=
+logger=context userId=1 orgId=1 uname=admin t=2023-12-13T20:16:31.334722093Z level=error msg="Request Completed" method=GET path=/api/datasources/uid/d2938061-83aa-4fa3-a6ff-10982e24675a/resources/api/v1/label/__name__/values status=500 remote_addr=10.0.0.1 time_ms=10027 duration=10.027389419s size=116 referer=http://10.0.0.5:3000/explore handler=/api/datasources/uid/:uid/resources/*
+logger=context userId=1 orgId=1 uname=admin t=2023-12-13T20:16:31.470765574Z level=error msg="Internal server error" error="[plugin.downstreamError] client: failed to call resources: error querying resource: Get \"http://172.17.0.3:9090/api/v1/query_exemplars?query=test&start=1702496781404&end=1702498581404\": dial tcp 172.17.0.3:9090: i/o timeout" remote_addr=10.0.0.1 traceID=
+logger=context userId=1 orgId=1 uname=admin t=2023-12-13T20:16:31.471004461Z level=error msg="Request Completed" method=GET path=/api/datasources/uid/d2938061-83aa-4fa3-a6ff-10982e24675a/resources/api/v1/query_exemplars status=500 remote_addr=10.0.0.1 time_ms=10003 duration=10.003041402s size=116 referer=http://10.0.0.5:3000/explore handler=/api/datasources/uid/:uid/resources/*
+logger=context userId=1 orgId=1 uname=admin t=2023-12-13T20:16:31.493101414Z level=error msg="Internal server error" error="[plugin.downstreamError] client: failed to call resources: error querying resource: Get \"http://172.17.0.3:9090/api/v1/rules\": dial tcp 172.17.0.3:9090: i/o timeout" remote_addr=10.0.0.1 traceID=
+logger=context userId=1 orgId=1 uname=admin t=2023-12-13T20:16:31.493408975Z level=error msg="Request Completed" method=GET path=/api/datasources/uid/d2938061-83aa-4fa3-a6ff-10982e24675a/resources/api/v1/rules status=500 remote_addr=10.0.0.1 time_ms=10027 duration=10.027325087s size=116 referer=http://10.0.0.5:3000/explore handler=/api/datasources/uid/:uid/resources/*
+logger=context userId=1 orgId=1 uname=admin t=2023-12-13T20:16:34.954588467Z level=error msg="Internal server error" error="[plugin.downstreamError] client: failed to call resources: error querying resource: Post \"http://172.17.0.3:9090/api/v1/query_exemplars\": dial tcp 172.17.0.3:9090: i/o timeout" remote_addr=10.0.0.1 traceID=
+logger=context userId=1 orgId=1 uname=admin t=2023-12-13T20:16:34.954688872Z level=error msg="Internal server error" error="[plugin.downstreamError] client: failed to call resources: error querying resource: Get \"http://172.17.0.3:9090/api/v1/rules\": dial tcp 172.17.0.3:9090: i/o timeout" remote_addr=10.0.0.1 traceID=
+logger=context userId=1 orgId=1 uname=admin t=2023-12-13T20:16:34.954893265Z level=error msg="Request Completed" method=POST path=/api/datasources/uid/ffc7e81c-5ba6-4ce1-ad44-3a9058333ae1/resources/api/v1/query_exemplars status=500 remote_addr=10.0.0.1 time_ms=10023 duration=10.023785326s size=116 referer="http://10.0.0.5:3000/explore?orgId=1&panes=%7B%22vnZ%22%3A%7B%22datasource%22%3A%22d2938061-83aa-4fa3-a6ff-10982e24675a%22%2C%22queries%22%3A%5B%7B%22refId%22%3A%22A%22%2C%22expr%22%3A%22%22%2C%22range%22%3Atrue%2C%22instant%22%3Atrue%2C%22datasource%22%3A%7B%22type%22%3A%22prometheus%22%2C%22uid%22%3A%22d2938061-83aa-4fa3-a6ff-10982e24675a%22%7D%7D%5D%2C%22range%22%3A%7B%22from%22%3A%22now-6h%22%2C%22to%22%3A%22now%22%7D%7D%7D&schemaVersion=1" handler=/api/datasources/uid/:uid/resources/*
+logger=context userId=1 orgId=1 uname=admin t=2023-12-13T20:16:34.954968131Z level=error msg="Request Completed" method=GET path=/api/datasources/uid/ffc7e81c-5ba6-4ce1-ad44-3a9058333ae1/resources/api/v1/rules status=500 remote_addr=10.0.0.1 time_ms=10029 duration=10.029911362s size=116 referer="http://10.0.0.5:3000/explore?orgId=1&panes=%7B%22vnZ%22%3A%7B%22datasource%22%3A%22d2938061-83aa-4fa3-a6ff-10982e24675a%22%2C%22queries%22%3A%5B%7B%22refId%22%3A%22A%22%2C%22expr%22%3A%22%22%2C%22range%22%3Atrue%2C%22instant%22%3Atrue%2C%22datasource%22%3A%7B%22type%22%3A%22prometheus%22%2C%22uid%22%3A%22d2938061-83aa-4fa3-a6ff-10982e24675a%22%7D%7D%5D%2C%22range%22%3A%7B%22from%22%3A%22now-6h%22%2C%22to%22%3A%22now%22%7D%7D%7D&schemaVersion=1" handler=/api/datasources/uid/:uid/resources/*
+logger=context userId=1 orgId=1 uname=admin t=2023-12-13T20:16:39.618630345Z level=error msg="Internal server error" error="[plugin.downstreamError] client: failed to call resources: error querying resource: Get \"http://172.17.0.3:9090/api/v1/rules\": context canceled" remote_addr=10.0.0.1 traceID=
+logger=context userId=1 orgId=1 uname=admin t=2023-12-13T20:16:39.618779458Z level=error msg="Request Completed" method=GET path=/api/datasources/uid/eafabb41-bc95-4a85-b46c-1f54980634f1/resources/api/v1/rules status=500 remote_addr=10.0.0.1 time_ms=6718 duration=6.718890309s size=116 referer="http://10.0.0.5:3000/explore?orgId=1&panes=%7B%22vnZ%22%3A%7B%22datasource%22%3A%22ffc7e81c-5ba6-4ce1-ad44-3a9058333ae1%22%2C%22queries%22%3A%5B%5D%2C%22range%22%3A%7B%22from%22%3A%22now-6h%22%2C%22to%22%3A%22now%22%7D%7D%7D&schemaVersion=1" handler=/api/datasources/uid/:uid/resources/*
+logger=context userId=1 orgId=1 uname=admin t=2023-12-13T20:16:39.619480614Z level=error msg="Internal server error" error="[plugin.downstreamError] client: failed to call resources: error querying resource: Post \"http://172.17.0.3:9090/api/v1/query_exemplars\": context canceled" remote_addr=10.0.0.1 traceID=
+logger=context userId=1 orgId=1 uname=admin t=2023-12-13T20:16:39.619671287Z level=error msg="Request Completed" method=POST path=/api/datasources/uid/eafabb41-bc95-4a85-b46c-1f54980634f1/resources/api/v1/query_exemplars status=500 remote_addr=10.0.0.1 time_ms=6715 duration=6.715295319s size=116 referer="http://10.0.0.5:3000/explore?orgId=1&panes=%7B%22vnZ%22%3A%7B%22datasource%22%3A%22ffc7e81c-5ba6-4ce1-ad44-3a9058333ae1%22%2C%22queries%22%3A%5B%5D%2C%22range%22%3A%7B%22from%22%3A%22now-6h%22%2C%22to%22%3A%22now%22%7D%7D%7D&schemaVersion=1" handler=/api/datasources/uid/:uid/resources/*
+logger=live t=2023-12-13T20:16:59.049349897Z level=info msg="Initialized channel handler" channel=grafana/dashboard/uid/ed21322b-9f58-49b6-abd4-75dd2f1eb41d address=grafana/dashboard/uid/ed21322b-9f58-49b6-abd4-75dd2f1eb41d
+logger=context userId=1 orgId=1 uname=admin t=2023-12-13T20:17:04.007822282Z level=info msg="Request Completed" method=POST path=/api/ds/query status=400 remote_addr=10.0.0.1 time_ms=4919 duration=4.919914192s size=230 referer="http://10.0.0.5:3000/d/ed21322b-9f58-49b6-abd4-75dd2f1eb41d/kpis?orgId=1&refresh=5s" handler=/api/ds/query
+logger=context userId=1 orgId=1 uname=admin t=2023-12-13T20:17:04.014223547Z level=info msg="Request Completed" method=POST path=/api/ds/query status=400 remote_addr=10.0.0.1 time_ms=4921 duration=4.921452352s size=231 referer="http://10.0.0.5:3000/d/ed21322b-9f58-49b6-abd4-75dd2f1eb41d/kpis?orgId=1&refresh=5s" handler=/api/ds/query
+logger=context userId=1 orgId=1 uname=admin t=2023-12-13T20:17:04.022873646Z level=info msg="Request Completed" method=POST path=/api/ds/query status=400 remote_addr=10.0.0.1 time_ms=4926 duration=4.926596032s size=236 referer="http://10.0.0.5:3000/d/ed21322b-9f58-49b6-abd4-75dd2f1eb41d/kpis?orgId=1&refresh=5s" handler=/api/ds/query
+logger=context userId=1 orgId=1 uname=admin t=2023-12-13T20:17:14.018927823Z level=info msg="Request Completed" method=POST path=/api/ds/query status=400 remote_addr=10.0.0.1 time_ms=10002 duration=10.002473142s size=251 referer="http://10.0.0.5:3000/d/ed21322b-9f58-49b6-abd4-75dd2f1eb41d/kpis?orgId=1&refresh=5s" handler=/api/ds/query
+logger=context userId=1 orgId=1 uname=admin t=2023-12-13T20:17:14.031574737Z level=info msg="Request Completed" method=POST path=/api/ds/query status=400 remote_addr=10.0.0.1 time_ms=10003 duration=10.003306033s size=252 referer="http://10.0.0.5:3000/d/ed21322b-9f58-49b6-abd4-75dd2f1eb41d/kpis?orgId=1&refresh=5s" handler=/api/ds/query
+logger=context userId=1 orgId=1 uname=admin t=2023-12-13T20:17:14.036372422Z level=info msg="Request Completed" method=POST path=/api/ds/query status=400 remote_addr=10.0.0.1 time_ms=10003 duration=10.00300911s size=257 referer="http://10.0.0.5:3000/d/ed21322b-9f58-49b6-abd4-75dd2f1eb41d/kpis?orgId=1&refresh=5s" handler=/api/ds/query
+logger=context userId=1 orgId=1 uname=admin t=2023-12-13T20:17:29.023730782Z level=info msg="Request Completed" method=POST path=/api/ds/query status=400 remote_addr=10.0.0.1 time_ms=3977 duration=3.977799051s size=231 referer="http://10.0.0.5:3000/d/ed21322b-9f58-49b6-abd4-75dd2f1eb41d/kpis?orgId=1&refresh=5s" handler=/api/ds/query
+logger=context userId=1 orgId=1 uname=admin t=2023-12-13T20:17:29.024328534Z level=info msg="Request Completed" method=POST path=/api/ds/query status=400 remote_addr=10.0.0.1 time_ms=3992 duration=3.992780136s size=230 referer="http://10.0.0.5:3000/d/ed21322b-9f58-49b6-abd4-75dd2f1eb41d/kpis?orgId=1&refresh=5s" handler=/api/ds/query
+logger=context userId=1 orgId=1 uname=admin t=2023-12-13T20:17:29.026640619Z level=info msg="Request Completed" method=POST path=/api/ds/query status=400 remote_addr=10.0.0.1 time_ms=3977 duration=3.977768726s size=236 referer="http://10.0.0.5:3000/d/ed21322b-9f58-49b6-abd4-75dd2f1eb41d/kpis?orgId=1&refresh=5s" handler=/api/ds/query
+logger=context userId=1 orgId=1 uname=admin t=2023-12-13T20:17:39.024879208Z level=info msg="Request Completed" method=POST path=/api/ds/query status=400 remote_addr=10.0.0.1 time_ms=10002 duration=10.002943449s size=251 referer="http://10.0.0.5:3000/d/ed21322b-9f58-49b6-abd4-75dd2f1eb41d/kpis?orgId=1&refresh=5s" handler=/api/ds/query
+logger=context userId=1 orgId=1 uname=admin t=2023-12-13T20:17:39.025961009Z level=info msg="Request Completed" method=POST path=/api/ds/query status=400 remote_addr=10.0.0.1 time_ms=10002 duration=10.002294152s size=252 referer="http://10.0.0.5:3000/d/ed21322b-9f58-49b6-abd4-75dd2f1eb41d/kpis?orgId=1&refresh=5s" handler=/api/ds/query
+logger=context userId=1 orgId=1 uname=admin t=2023-12-13T20:17:39.038044452Z level=info msg="Request Completed" method=POST path=/api/ds/query status=400 remote_addr=10.0.0.1 time_ms=10002 duration=10.002247764s size=257 referer="http://10.0.0.5:3000/d/ed21322b-9f58-49b6-abd4-75dd2f1eb41d/kpis?orgId=1&refresh=5s" handler=/api/ds/query
+logger=context userId=1 orgId=1 uname=admin t=2023-12-13T20:18:08.09910212Z level=info msg="Request Completed" method=POST path=/api/ds/query status=400 remote_addr=10.0.0.1 time_ms=10004 duration=10.004917045s size=252 referer="http://10.0.0.5:3000/d/ed21322b-9f58-49b6-abd4-75dd2f1eb41d/kpis?from=now-5m&orgId=1&refresh=5s&to=now" handler=/api/ds/query
+logger=context userId=1 orgId=1 uname=admin t=2023-12-13T20:18:08.108632233Z level=info msg="Request Completed" method=POST path=/api/ds/query status=400 remote_addr=10.0.0.1 time_ms=10002 duration=10.002796994s size=257 referer="http://10.0.0.5:3000/d/ed21322b-9f58-49b6-abd4-75dd2f1eb41d/kpis?from=now-5m&orgId=1&refresh=5s&to=now" handler=/api/ds/query
+logger=context userId=1 orgId=1 uname=admin t=2023-12-13T20:18:22.198623013Z level=info msg="Request Completed" method=POST path=/api/ds/query status=400 remote_addr=10.0.0.1 time_ms=4977 duration=4.977725231s size=231 referer="http://10.0.0.5:3000/d/ed21322b-9f58-49b6-abd4-75dd2f1eb41d/kpis?from=now-5m&orgId=1&refresh=5s&to=now" handler=/api/ds/query
+logger=context userId=1 orgId=1 uname=admin t=2023-12-13T20:18:32.213422677Z level=info msg="Request Completed" method=POST path=/api/ds/query status=400 remote_addr=10.0.0.1 time_ms=10005 duration=10.005590757s size=252 referer="http://10.0.0.5:3000/d/ed21322b-9f58-49b6-abd4-75dd2f1eb41d/kpis?from=now-5m&orgId=1&refresh=5s&to=now&viewPanel=2" handler=/api/ds/query
+logger=server t=2023-12-13T20:20:38.212926266Z level=info msg="Shutdown started" reason="System signal: terminated"
+logger=tracing t=2023-12-13T20:20:38.21342983Z level=info msg="Closing tracing"
+logger=ticker t=2023-12-13T20:20:38.214479084Z level=info msg=stopped last_tick=2023-12-13T20:20:30Z
