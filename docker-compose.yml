@@ -1,0 +1,57 @@
+version: '3.7'
+
+services:
+  server:
+    image: app-metrics
+    container_name: app-metrics
+    build:
+      context: app
+      dockerfile: dockerfile-app
+    entrypoint: "python3 metrics.py"
+    networks:
+      local-network:
+        ipv4_address: 10.0.0.2
+
+  client:
+    image: user01
+    container_name: user01
+    build:
+      context: client
+      dockerfile: dockerfile-user
+    entrypoint: "tail -f /dev/null"
+    networks:
+      local-network:
+        ipv4_address: 10.0.0.3
+
+  prometheus:
+    image: prometheus-local
+    container_name: prometheus-local
+    build:
+      context: prometheus-grafana
+      dockerfile: dockerfile.prometheus
+    volumes:
+      - ./prometheus-grafana/prometheus-data/storage:/var/lib/prometheus/:rw
+    entrypoint: prometheus --config.file=/etc/prometheus/prometheus.yml --storage.tsdb.path=/var/lib/prometheus --web.console.templates=/etc/prometheus/consoles --web.console.libraries=/etc/prometheus/console_libraries --web.listen-address=0.0.0.0:9090
+    networks:
+      local-network:
+        ipv4_address: 10.0.0.4
+
+  grafana:
+    image: grafana-local
+    container_name: grafana-local
+    build:
+      context: prometheus-grafana
+      dockerfile: dockerfile.grafana
+    entrypoint: bin/grafana-server
+    volumes:
+      - ./prometheus-grafana/grafana-data:/usr/share/grafana/data
+    networks:
+      local-network:
+        ipv4_address: 10.0.0.5
+
+networks:
+  local-network:
+    driver: bridge
+    ipam:
+     config:
+       - subnet: 10.0.0.0/16
