@@ -1,0 +1,34 @@
+FROM ubuntu:20.04
+WORKDIR Prometheus
+ADD https://github.com/prometheus/prometheus/releases/download/v2.48.0/prometheus-2.48.0.linux-amd64.tar.gz .
+RUN tar -xvf prometheus-2.48.0.linux-amd64.tar.gz
+RUN mv prometheus-2.48.0.linux-amd64/prometheus /usr/local/bin/prometheus
+RUN mv prometheus-2.48.0.linux-amd64/promtool /usr/local/bin/promtool
+RUN mkdir /etc/prometheus
+RUN touch /var/log/prometheus
+RUN mkdir -p /var/lib/prometheus
+COPY prometheus-data/prometheus.yml /etc/prometheus/prometheus.yml
+RUN mv prometheus-2.48.0.linux-amd64/consoles /etc/prometheus
+RUN mv prometheus-2.48.0.linux-amd64/console_libraries /etc/prometheus
+
+
+RUN addgroup --system prometheus
+RUN adduser --shell /sbin/nologin --system --group prometheus
+RUN chown -R prometheus:prometheus /var/log/prometheus
+RUN chown -R prometheus:prometheus /etc/prometheus
+RUN chown -R prometheus:prometheus /var/lib/prometheus
+RUN chown -R prometheus:prometheus /usr/local/bin/prometheus
+RUN chown -R prometheus:prometheus /usr/local/bin/promtool
+
+USER prometheus
+#VOLUME [ "prometheus-data:/var/lib/prometheus:rw" ]
+
+CMD prometheus \
+  --config.file=/etc/prometheus/prometheus.yml \
+  --storage.tsdb.path=/var/lib/prometheus \
+  --web.console.templates=/etc/prometheus/consoles \
+  --web.console.libraries=/etc/prometheus/console_libraries \
+  --web.listen-address=0.0.0.0:9090
+
+# OBS QUEM ESTÁ EXECUTANDO PRECISA UTILIZAR O CMD COMO ENTRYPOINT, LEMBRANDO QUE
+# É NECESSARIO CRIAR UM VOLUME PARA ARMAZENAR OS DADOS

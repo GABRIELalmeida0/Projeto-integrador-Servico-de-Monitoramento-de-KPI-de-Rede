@@ -1,0 +1,6 @@
+FROM python:3.8
+RUN pip install flask icmplib prometheus-client
+RUN apt update -y && apt upgrade -y && apt install -y iputils-ping iproute2
+WORKDIR /app
+COPY metrics.py .
+CMD /bin/bash
