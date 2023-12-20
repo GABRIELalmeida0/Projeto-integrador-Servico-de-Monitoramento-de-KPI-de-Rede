@@ -3,7 +3,7 @@ FROM ubuntu:20.04
 RUN apt update && apt install -y cron vim iputils-ping iproute2 python3
 
 WORKDIR /network
-COPY crontab.cron /etc/cron.d/crontab.cron
+COPY crontab-new.cron /etc/cron.d/crontab.cron
 COPY alteracao_rede.py .
 RUN chmod 0644 /etc/cron.d/crontab.cron
 RUN crontab /etc/cron.d/crontab.cron
