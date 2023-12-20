@@ -15,10 +15,11 @@ services:
   client:
     image: user01
     container_name: user01
+    privileged: true
     build:
       context: client
       dockerfile: dockerfile-user
-    entrypoint: "tail -f /dev/null"
+    entrypoint: "cron && tail -f /dev/null"
     networks:
       local-network:
         ipv4_address: 10.0.0.3

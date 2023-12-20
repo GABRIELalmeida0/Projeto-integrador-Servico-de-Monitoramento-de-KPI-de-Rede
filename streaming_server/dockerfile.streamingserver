@@ -1,0 +1,6 @@
+FROM ubuntu:20.04
+WORKDIR streaming_server
+RUN apt update -y && apt install -y net-tools iputils-ping iproute2 ffmpeg vim python3
+COPY  MediaMtx .
+COPY ./videos /videos
+CMD  ["./mediamtx"]

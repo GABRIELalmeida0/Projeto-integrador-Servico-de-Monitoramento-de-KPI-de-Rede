@@ -1,12 +1,11 @@
-FROM python:3.8
-USER root
+FROM ubuntu:20.04
 
-WORKDIR network
+RUN apt update && apt install -y cron vim iputils-ping iproute2 python3
+
+WORKDIR /network
+COPY crontab.cron /etc/cron.d/crontab.cron
 COPY alteracao_rede.py .
-COPY crontab.cron .
-RUN apt-get update && apt-get install -y net-tools cron vim iputils-ping iproute2
+RUN chmod 0644 /etc/cron.d/crontab.cron
+RUN crontab /etc/cron.d/crontab.cron
 
-RUN crontab -u root crontab.cron
-
-
-CMD /bin/bash 
+CMD cron && tail -f /dev/null

@@ -1,0 +1,17 @@
+{
+	"ulid": "01HJ42QBS65CQ805TT00YDJSJX",
+	"minTime": 1703080809476,
+	"maxTime": 1703088000000,
+	"stats": {
+		"numSamples": 243840,
+		"numSeries": 508,
+		"numChunks": 2032
+	},
+	"compaction": {
+		"level": 1,
+		"sources": [
+			"01HJ42QBS65CQ805TT00YDJSJX"
+		]
+	},
+	"version": 1
+}

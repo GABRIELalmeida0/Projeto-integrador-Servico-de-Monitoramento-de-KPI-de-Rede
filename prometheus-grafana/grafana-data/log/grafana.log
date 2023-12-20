@@ -1,186 +1,301 @@
-logger=settings t=2023-12-13T20:08:51.408488151Z level=info msg="Starting Grafana" version=10.2.2 commit=161e3cac5075540918e3a39004f2364ad104d5bb branch=HEAD compiled=2023-11-20T12:28:00Z
-logger=settings t=2023-12-13T20:08:51.409194003Z level=info msg="Config loaded from" file=/usr/share/grafana/conf/defaults.ini
-logger=settings t=2023-12-13T20:08:51.409279618Z level=info msg=Target target=[all]
-logger=settings t=2023-12-13T20:08:51.409340225Z level=info msg="Path Home" path=/usr/share/grafana
-logger=settings t=2023-12-13T20:08:51.40936161Z level=info msg="Path Data" path=/usr/share/grafana/data
-logger=settings t=2023-12-13T20:08:51.409383602Z level=info msg="Path Logs" path=/usr/share/grafana/data/log
-logger=settings t=2023-12-13T20:08:51.409398141Z level=info msg="Path Plugins" path=/usr/share/grafana/data/plugins
-logger=settings t=2023-12-13T20:08:51.409412444Z level=info msg="Path Provisioning" path=/usr/share/grafana/conf/provisioning
-logger=settings t=2023-12-13T20:08:51.409432892Z level=info msg="App mode production"
-logger=sqlstore t=2023-12-13T20:08:51.409952376Z level=info msg="Connecting to DB" dbtype=sqlite3
-logger=migrator t=2023-12-13T20:08:51.410980415Z level=info msg="Starting DB migrations"
-logger=migrator t=2023-12-13T20:08:51.435142924Z level=info msg="migrations completed" performed=0 skipped=517 duration=798.694µs
-logger=secrets t=2023-12-13T20:08:51.436848456Z level=info msg="Envelope encryption state" enabled=true currentprovider=secretKey.v1
-logger=plugins.registration t=2023-12-13T20:08:51.53347918Z level=info msg="Plugin registered" pluginId=input
-logger=query_data t=2023-12-13T20:08:51.538262518Z level=info msg="Query Service initialization"
-logger=live.push_http t=2023-12-13T20:08:51.545585425Z level=info msg="Live Push Gateway initialization"
-logger=infra.usagestats.collector t=2023-12-13T20:08:55.250167889Z level=info msg="registering usage stat providers" usageStatsProvidersLen=2
-logger=provisioning.alerting t=2023-12-13T20:08:55.251384646Z level=info msg="starting to provision alerting"
-logger=provisioning.alerting t=2023-12-13T20:08:55.251456713Z level=info msg="finished to provision alerting"
-logger=http.server t=2023-12-13T20:08:55.259432362Z level=info msg="HTTP Server Listen" address=[::]:3000 protocol=http subUrl= socket=
-logger=grafanaStorageLogger t=2023-12-13T20:08:55.259907553Z level=info msg="Storage starting"
-logger=ngalert.state.manager t=2023-12-13T20:08:55.264052928Z level=info msg="Warming state cache for startup"
-logger=ngalert.migration t=2023-12-13T20:08:55.321032014Z level=info msg=Starting
-logger=ngalert.migration t=2023-12-13T20:08:55.32195098Z level=info msg="No migrations to run"
-logger=grafana.update.checker t=2023-12-13T20:08:55.347403366Z level=info msg="Update check succeeded" duration=95.736489ms
-logger=ngalert.state.manager t=2023-12-13T20:08:55.486174975Z level=info msg="State cache has been initialized" states=0 duration=222.116125ms
-logger=ngalert.scheduler t=2023-12-13T20:08:55.486273711Z level=info msg="Starting scheduler" tickInterval=10s
-logger=ticker t=2023-12-13T20:08:55.487309255Z level=info msg=starting first_tick=2023-12-13T20:09:00Z
-logger=ngalert.multiorg.alertmanager t=2023-12-13T20:08:55.48695671Z level=info msg="Starting MultiOrg Alertmanager"
-logger=plugins.update.checker t=2023-12-13T20:08:55.628047822Z level=info msg="Update check succeeded" duration=375.560616ms
-logger=infra.usagestats t=2023-12-13T20:09:25.270722831Z level=info msg="Usage stats are ready to report"
-logger=server t=2023-12-13T20:10:52.853277782Z level=info msg="Shutdown started" reason="System signal: terminated"
-logger=tracing t=2023-12-13T20:10:52.85350712Z level=info msg="Closing tracing"
-logger=ticker t=2023-12-13T20:10:52.854249523Z level=info msg=stopped last_tick=2023-12-13T20:10:50Z
-logger=settings t=2023-12-13T20:11:19.968796711Z level=info msg="Starting Grafana" version=10.2.2 commit=161e3cac5075540918e3a39004f2364ad104d5bb branch=HEAD compiled=2023-11-20T12:28:00Z
-logger=settings t=2023-12-13T20:11:19.969391702Z level=info msg="Config loaded from" file=/usr/share/grafana/conf/defaults.ini
-logger=settings t=2023-12-13T20:11:19.969469133Z level=info msg=Target target=[all]
-logger=settings t=2023-12-13T20:11:19.969506941Z level=info msg="Path Home" path=/usr/share/grafana
-logger=settings t=2023-12-13T20:11:19.969527642Z level=info msg="Path Data" path=/usr/share/grafana/data
-logger=settings t=2023-12-13T20:11:19.969547501Z level=info msg="Path Logs" path=/usr/share/grafana/data/log
-logger=settings t=2023-12-13T20:11:19.969565093Z level=info msg="Path Plugins" path=/usr/share/grafana/data/plugins
-logger=settings t=2023-12-13T20:11:19.969583435Z level=info msg="Path Provisioning" path=/usr/share/grafana/conf/provisioning
-logger=settings t=2023-12-13T20:11:19.96960259Z level=info msg="App mode production"
-logger=sqlstore t=2023-12-13T20:11:19.970133266Z level=info msg="Connecting to DB" dbtype=sqlite3
-logger=migrator t=2023-12-13T20:11:19.971087742Z level=info msg="Starting DB migrations"
-logger=migrator t=2023-12-13T20:11:19.996419339Z level=info msg="migrations completed" performed=0 skipped=517 duration=1.024362ms
-logger=secrets t=2023-12-13T20:11:19.998459654Z level=info msg="Envelope encryption state" enabled=true currentprovider=secretKey.v1
-logger=plugins.registration t=2023-12-13T20:11:20.109220024Z level=info msg="Plugin registered" pluginId=input
-logger=query_data t=2023-12-13T20:11:20.114787345Z level=info msg="Query Service initialization"
-logger=live.push_http t=2023-12-13T20:11:20.120190563Z level=info msg="Live Push Gateway initialization"
-logger=infra.usagestats.collector t=2023-12-13T20:11:23.894508475Z level=info msg="registering usage stat providers" usageStatsProvidersLen=2
-logger=provisioning.alerting t=2023-12-13T20:11:23.896052554Z level=info msg="starting to provision alerting"
-logger=provisioning.alerting t=2023-12-13T20:11:23.896143874Z level=info msg="finished to provision alerting"
-logger=ngalert.state.manager t=2023-12-13T20:11:23.896645861Z level=info msg="Warming state cache for startup"
-logger=http.server t=2023-12-13T20:11:23.903539138Z level=info msg="HTTP Server Listen" address=[::]:3000 protocol=http subUrl= socket=
-logger=grafanaStorageLogger t=2023-12-13T20:11:23.904297833Z level=info msg="Storage starting"
-logger=ngalert.migration t=2023-12-13T20:11:23.989104797Z level=info msg=Starting
-logger=ngalert.migration t=2023-12-13T20:11:23.990044895Z level=info msg="No migrations to run"
-logger=ngalert.state.manager t=2023-12-13T20:11:24.050009289Z level=info msg="State cache has been initialized" states=0 duration=153.365751ms
-logger=ngalert.scheduler t=2023-12-13T20:11:24.050593251Z level=info msg="Starting scheduler" tickInterval=10s
-logger=ticker t=2023-12-13T20:11:24.05109506Z level=info msg=starting first_tick=2023-12-13T20:11:30Z
-logger=ngalert.multiorg.alertmanager t=2023-12-13T20:11:24.051493262Z level=info msg="Starting MultiOrg Alertmanager"
-logger=grafana.update.checker t=2023-12-13T20:11:24.106076236Z level=info msg="Update check succeeded" duration=207.15165ms
-logger=plugins.update.checker t=2023-12-13T20:11:24.308113143Z level=info msg="Update check succeeded" duration=408.111767ms
-logger=server t=2023-12-13T20:11:40.591908661Z level=info msg="Shutdown started" reason="System signal: terminated"
-logger=tracing t=2023-12-13T20:11:40.592275767Z level=info msg="Closing tracing"
-logger=ticker t=2023-12-13T20:11:40.593119045Z level=info msg=stopped last_tick=2023-12-13T20:11:40Z
-logger=settings t=2023-12-13T20:12:26.831982168Z level=info msg="Starting Grafana" version=10.2.2 commit=161e3cac5075540918e3a39004f2364ad104d5bb branch=HEAD compiled=2023-11-20T12:28:00Z
-logger=settings t=2023-12-13T20:12:26.832589872Z level=info msg="Config loaded from" file=/usr/share/grafana/conf/defaults.ini
-logger=settings t=2023-12-13T20:12:26.832678616Z level=info msg=Target target=[all]
-logger=settings t=2023-12-13T20:12:26.832718537Z level=info msg="Path Home" path=/usr/share/grafana
-logger=settings t=2023-12-13T20:12:26.832748497Z level=info msg="Path Data" path=/usr/share/grafana/data
-logger=settings t=2023-12-13T20:12:26.832770714Z level=info msg="Path Logs" path=/usr/share/grafana/data/log
-logger=settings t=2023-12-13T20:12:26.832819195Z level=info msg="Path Plugins" path=/usr/share/grafana/data/plugins
-logger=settings t=2023-12-13T20:12:26.832841584Z level=info msg="Path Provisioning" path=/usr/share/grafana/conf/provisioning
-logger=settings t=2023-12-13T20:12:26.832869575Z level=info msg="App mode production"
-logger=sqlstore t=2023-12-13T20:12:26.83355437Z level=info msg="Connecting to DB" dbtype=sqlite3
-logger=migrator t=2023-12-13T20:12:26.834650103Z level=info msg="Starting DB migrations"
-logger=migrator t=2023-12-13T20:12:26.859890798Z level=info msg="migrations completed" performed=0 skipped=517 duration=756.081µs
-logger=secrets t=2023-12-13T20:12:26.861819987Z level=info msg="Envelope encryption state" enabled=true currentprovider=secretKey.v1
-logger=plugins.registration t=2023-12-13T20:12:26.95432444Z level=info msg="Plugin registered" pluginId=input
-logger=query_data t=2023-12-13T20:12:26.959495826Z level=info msg="Query Service initialization"
-logger=live.push_http t=2023-12-13T20:12:27.003631675Z level=info msg="Live Push Gateway initialization"
-logger=infra.usagestats.collector t=2023-12-13T20:12:30.636315864Z level=info msg="registering usage stat providers" usageStatsProvidersLen=2
-logger=provisioning.alerting t=2023-12-13T20:12:30.637731234Z level=info msg="starting to provision alerting"
-logger=provisioning.alerting t=2023-12-13T20:12:30.637817318Z level=info msg="finished to provision alerting"
-logger=ngalert.state.manager t=2023-12-13T20:12:30.638975477Z level=info msg="Warming state cache for startup"
-logger=ngalert.state.manager t=2023-12-13T20:12:30.64030153Z level=info msg="State cache has been initialized" states=0 duration=1.317173ms
-logger=ngalert.scheduler t=2023-12-13T20:12:30.641004264Z level=info msg="Starting scheduler" tickInterval=10s
-logger=ticker t=2023-12-13T20:12:30.641692127Z level=info msg=starting first_tick=2023-12-13T20:12:40Z
-logger=ngalert.multiorg.alertmanager t=2023-12-13T20:12:30.642753223Z level=info msg="Starting MultiOrg Alertmanager"
-logger=http.server t=2023-12-13T20:12:30.644233144Z level=info msg="HTTP Server Listen" address=[::]:3000 protocol=http subUrl= socket=
-logger=grafanaStorageLogger t=2023-12-13T20:12:30.652663358Z level=info msg="Storage starting"
-logger=grafana.update.checker t=2023-12-13T20:12:30.725362788Z level=info msg="Update check succeeded" duration=81.117744ms
-logger=ngalert.migration t=2023-12-13T20:12:30.916093647Z level=info msg=Starting
-logger=ngalert.migration t=2023-12-13T20:12:30.918137996Z level=info msg="No migrations to run"
-logger=plugins.update.checker t=2023-12-13T20:12:30.966770685Z level=info msg="Update check succeeded" duration=320.249439ms
-logger=server t=2023-12-13T20:12:32.286779939Z level=info msg="Shutdown started" reason="System signal: terminated"
-logger=ticker t=2023-12-13T20:12:32.287131265Z level=info msg=stopped last_tick=2023-12-13T20:12:30Z
-logger=tracing t=2023-12-13T20:12:32.287231547Z level=info msg="Closing tracing"
-logger=settings t=2023-12-13T20:14:46.87549067Z level=info msg="Starting Grafana" version=10.2.2 commit=161e3cac5075540918e3a39004f2364ad104d5bb branch=HEAD compiled=2023-11-20T12:28:00Z
-logger=settings t=2023-12-13T20:14:46.876100844Z level=info msg="Config loaded from" file=/usr/share/grafana/conf/defaults.ini
-logger=settings t=2023-12-13T20:14:46.876182186Z level=info msg=Target target=[all]
-logger=settings t=2023-12-13T20:14:46.876225859Z level=info msg="Path Home" path=/usr/share/grafana
-logger=settings t=2023-12-13T20:14:46.876251532Z level=info msg="Path Data" path=/usr/share/grafana/data
-logger=settings t=2023-12-13T20:14:46.87627142Z level=info msg="Path Logs" path=/usr/share/grafana/data/log
-logger=settings t=2023-12-13T20:14:46.876291603Z level=info msg="Path Plugins" path=/usr/share/grafana/data/plugins
-logger=settings t=2023-12-13T20:14:46.876317442Z level=info msg="Path Provisioning" path=/usr/share/grafana/conf/provisioning
-logger=settings t=2023-12-13T20:14:46.876337617Z level=info msg="App mode production"
-logger=sqlstore t=2023-12-13T20:14:46.877048204Z level=info msg="Connecting to DB" dbtype=sqlite3
-logger=migrator t=2023-12-13T20:14:46.878493527Z level=info msg="Starting DB migrations"
-logger=migrator t=2023-12-13T20:14:46.904654331Z level=info msg="migrations completed" performed=0 skipped=517 duration=944.121µs
-logger=secrets t=2023-12-13T20:14:46.906458597Z level=info msg="Envelope encryption state" enabled=true currentprovider=secretKey.v1
-logger=plugins.registration t=2023-12-13T20:14:46.987079243Z level=info msg="Plugin registered" pluginId=input
-logger=query_data t=2023-12-13T20:14:46.991286582Z level=info msg="Query Service initialization"
-logger=live.push_http t=2023-12-13T20:14:46.999495597Z level=info msg="Live Push Gateway initialization"
-logger=infra.usagestats.collector t=2023-12-13T20:14:50.756341452Z level=info msg="registering usage stat providers" usageStatsProvidersLen=2
-logger=provisioning.alerting t=2023-12-13T20:14:50.757791805Z level=info msg="starting to provision alerting"
-logger=provisioning.alerting t=2023-12-13T20:14:50.757870922Z level=info msg="finished to provision alerting"
-logger=grafanaStorageLogger t=2023-12-13T20:14:50.758254842Z level=info msg="Storage starting"
-logger=ngalert.state.manager t=2023-12-13T20:14:50.768920409Z level=info msg="Warming state cache for startup"
-logger=http.server t=2023-12-13T20:14:50.76915971Z level=info msg="HTTP Server Listen" address=[::]:3000 protocol=http subUrl= socket=
-logger=ngalert.migration t=2023-12-13T20:14:50.895649709Z level=info msg=Starting
-logger=ngalert.migration t=2023-12-13T20:14:50.896993257Z level=info msg="No migrations to run"
-logger=grafana.update.checker t=2023-12-13T20:14:50.968176713Z level=info msg="Update check succeeded" duration=187.711431ms
-logger=ngalert.state.manager t=2023-12-13T20:14:51.082835306Z level=info msg="State cache has been initialized" states=0 duration=313.905512ms
-logger=ngalert.scheduler t=2023-12-13T20:14:51.08316116Z level=info msg="Starting scheduler" tickInterval=10s
-logger=ticker t=2023-12-13T20:14:51.083593204Z level=info msg=starting first_tick=2023-12-13T20:15:00Z
-logger=ngalert.multiorg.alertmanager t=2023-12-13T20:14:51.083426823Z level=info msg="Starting MultiOrg Alertmanager"
-logger=plugins.update.checker t=2023-12-13T20:14:51.109108429Z level=info msg="Update check succeeded" duration=350.882006ms
-logger=authn.service t=2023-12-13T20:15:33.424758271Z level=warn msg="Failed to authenticate request" client=auth.client.session error="user token not found"
-logger=context userId=0 orgId=0 uname= t=2023-12-13T20:15:33.425010408Z level=info msg="Request Completed" method=GET path=/ status=302 remote_addr=10.0.0.1 time_ms=1 duration=1.332067ms size=29 referer= handler=/
-logger=authn.service t=2023-12-13T20:15:33.444746707Z level=warn msg="Failed to authenticate request" client=auth.client.session error="user token not found"
-logger=http.server t=2023-12-13T20:15:33.45201023Z level=error msg="Failed to parse user ID" error="identifier is not initialized"
-logger=infra.usagestats t=2023-12-13T20:15:34.776994385Z level=info msg="Usage stats are ready to report"
-logger=authn.service t=2023-12-13T20:15:35.366262234Z level=warn msg="Failed to authenticate request" client=auth.client.session error="user token not found"
-logger=context userId=0 orgId=0 uname= t=2023-12-13T20:15:35.366417353Z level=warn msg=Unauthorized error="user token not found" remote_addr=10.0.0.1 traceID=
-logger=context userId=0 orgId=0 uname= t=2023-12-13T20:15:35.366515312Z level=info msg="Request Completed" method=GET path=/api/live/ws status=401 remote_addr=10.0.0.1 time_ms=1 duration=1.236214ms size=40 referer= handler=/api/live/ws
-logger=authn.service t=2023-12-13T20:15:36.418121547Z level=warn msg="Failed to authenticate request" client=auth.client.session error="user token not found"
-logger=context userId=0 orgId=0 uname= t=2023-12-13T20:15:36.418447591Z level=warn msg=Unauthorized error="user token not found" remote_addr=10.0.0.1 traceID=
-logger=context userId=0 orgId=0 uname= t=2023-12-13T20:15:36.418622612Z level=info msg="Request Completed" method=GET path=/api/live/ws status=401 remote_addr=10.0.0.1 time_ms=2 duration=2.205298ms size=40 referer= handler=/api/live/ws
-logger=authn.service t=2023-12-13T20:15:37.788761681Z level=warn msg="Failed to authenticate request" client=auth.client.session error="user token not found"
-logger=context userId=0 orgId=0 uname= t=2023-12-13T20:15:37.788992837Z level=warn msg=Unauthorized error="user token not found" remote_addr=10.0.0.1 traceID=
-logger=context userId=0 orgId=0 uname= t=2023-12-13T20:15:37.789190882Z level=info msg="Request Completed" method=GET path=/api/live/ws status=401 remote_addr=10.0.0.1 time_ms=1 duration=1.865938ms size=40 referer= handler=/api/live/ws
-logger=authn.service t=2023-12-13T20:15:39.406580457Z level=warn msg="Failed to authenticate request" client=auth.client.session error="user token not found"
-logger=context userId=0 orgId=0 uname= t=2023-12-13T20:15:39.40671273Z level=warn msg=Unauthorized error="user token not found" remote_addr=10.0.0.1 traceID=
-logger=context userId=0 orgId=0 uname= t=2023-12-13T20:15:39.406796673Z level=info msg="Request Completed" method=GET path=/api/live/ws status=401 remote_addr=10.0.0.1 time_ms=1 duration=1.142363ms size=40 referer= handler=/api/live/ws
-logger=authn.service t=2023-12-13T20:15:40.577299043Z level=warn msg="Failed to authenticate request" client=auth.client.session error="user token not found"
-logger=context userId=1 orgId=1 uname=admin t=2023-12-13T20:15:42.38406211Z level=info msg="Request Completed" method=GET path=/api/live/ws status=-1 remote_addr=10.0.0.1 time_ms=51 duration=51.06643ms size=0 referer= handler=/api/live/ws
-logger=context userId=1 orgId=1 uname=admin t=2023-12-13T20:15:44.25618516Z level=info msg="Request Completed" method=GET path=/api/live/ws status=-1 remote_addr=10.0.0.1 time_ms=3 duration=3.645715ms size=0 referer= handler=/api/live/ws
-logger=context userId=1 orgId=1 uname=admin t=2023-12-13T20:16:21.223383854Z level=error msg="Internal server error" error="[plugin.downstreamError] client: failed to call resources: error querying resource: Get \"http://172.17.0.3:9090/api/v1/metadata\": context canceled" remote_addr=10.0.0.1 traceID=
-logger=context userId=1 orgId=1 uname=admin t=2023-12-13T20:16:21.22356467Z level=error msg="Request Completed" method=GET path=/api/datasources/uid/d2938061-83aa-4fa3-a6ff-10982e24675a/resources/api/v1/metadata status=500 remote_addr=10.0.0.1 time_ms=7865 duration=7.865741331s size=116 referer="http://10.0.0.5:3000/dashboard/new?editPanel=1&orgId=1&utm_source=grafana_gettingstarted" handler=/api/datasources/uid/:uid/resources/*
-logger=context userId=1 orgId=1 uname=admin t=2023-12-13T20:16:31.334475376Z level=error msg="Internal server error" error="[plugin.downstreamError] client: failed to call resources: error querying resource: Get \"http://172.17.0.3:9090/api/v1/label/__name__/values?start=1702476960&end=1702498620\": dial tcp 172.17.0.3:9090: i/o timeout" remote_addr=10.0.0.1 traceID=
-logger=context userId=1 orgId=1 uname=admin t=2023-12-13T20:16:31.334722093Z level=error msg="Request Completed" method=GET path=/api/datasources/uid/d2938061-83aa-4fa3-a6ff-10982e24675a/resources/api/v1/label/__name__/values status=500 remote_addr=10.0.0.1 time_ms=10027 duration=10.027389419s size=116 referer=http://10.0.0.5:3000/explore handler=/api/datasources/uid/:uid/resources/*
-logger=context userId=1 orgId=1 uname=admin t=2023-12-13T20:16:31.470765574Z level=error msg="Internal server error" error="[plugin.downstreamError] client: failed to call resources: error querying resource: Get \"http://172.17.0.3:9090/api/v1/query_exemplars?query=test&start=1702496781404&end=1702498581404\": dial tcp 172.17.0.3:9090: i/o timeout" remote_addr=10.0.0.1 traceID=
-logger=context userId=1 orgId=1 uname=admin t=2023-12-13T20:16:31.471004461Z level=error msg="Request Completed" method=GET path=/api/datasources/uid/d2938061-83aa-4fa3-a6ff-10982e24675a/resources/api/v1/query_exemplars status=500 remote_addr=10.0.0.1 time_ms=10003 duration=10.003041402s size=116 referer=http://10.0.0.5:3000/explore handler=/api/datasources/uid/:uid/resources/*
-logger=context userId=1 orgId=1 uname=admin t=2023-12-13T20:16:31.493101414Z level=error msg="Internal server error" error="[plugin.downstreamError] client: failed to call resources: error querying resource: Get \"http://172.17.0.3:9090/api/v1/rules\": dial tcp 172.17.0.3:9090: i/o timeout" remote_addr=10.0.0.1 traceID=
-logger=context userId=1 orgId=1 uname=admin t=2023-12-13T20:16:31.493408975Z level=error msg="Request Completed" method=GET path=/api/datasources/uid/d2938061-83aa-4fa3-a6ff-10982e24675a/resources/api/v1/rules status=500 remote_addr=10.0.0.1 time_ms=10027 duration=10.027325087s size=116 referer=http://10.0.0.5:3000/explore handler=/api/datasources/uid/:uid/resources/*
-logger=context userId=1 orgId=1 uname=admin t=2023-12-13T20:16:34.954588467Z level=error msg="Internal server error" error="[plugin.downstreamError] client: failed to call resources: error querying resource: Post \"http://172.17.0.3:9090/api/v1/query_exemplars\": dial tcp 172.17.0.3:9090: i/o timeout" remote_addr=10.0.0.1 traceID=
-logger=context userId=1 orgId=1 uname=admin t=2023-12-13T20:16:34.954688872Z level=error msg="Internal server error" error="[plugin.downstreamError] client: failed to call resources: error querying resource: Get \"http://172.17.0.3:9090/api/v1/rules\": dial tcp 172.17.0.3:9090: i/o timeout" remote_addr=10.0.0.1 traceID=
-logger=context userId=1 orgId=1 uname=admin t=2023-12-13T20:16:34.954893265Z level=error msg="Request Completed" method=POST path=/api/datasources/uid/ffc7e81c-5ba6-4ce1-ad44-3a9058333ae1/resources/api/v1/query_exemplars status=500 remote_addr=10.0.0.1 time_ms=10023 duration=10.023785326s size=116 referer="http://10.0.0.5:3000/explore?orgId=1&panes=%7B%22vnZ%22%3A%7B%22datasource%22%3A%22d2938061-83aa-4fa3-a6ff-10982e24675a%22%2C%22queries%22%3A%5B%7B%22refId%22%3A%22A%22%2C%22expr%22%3A%22%22%2C%22range%22%3Atrue%2C%22instant%22%3Atrue%2C%22datasource%22%3A%7B%22type%22%3A%22prometheus%22%2C%22uid%22%3A%22d2938061-83aa-4fa3-a6ff-10982e24675a%22%7D%7D%5D%2C%22range%22%3A%7B%22from%22%3A%22now-6h%22%2C%22to%22%3A%22now%22%7D%7D%7D&schemaVersion=1" handler=/api/datasources/uid/:uid/resources/*
-logger=context userId=1 orgId=1 uname=admin t=2023-12-13T20:16:34.954968131Z level=error msg="Request Completed" method=GET path=/api/datasources/uid/ffc7e81c-5ba6-4ce1-ad44-3a9058333ae1/resources/api/v1/rules status=500 remote_addr=10.0.0.1 time_ms=10029 duration=10.029911362s size=116 referer="http://10.0.0.5:3000/explore?orgId=1&panes=%7B%22vnZ%22%3A%7B%22datasource%22%3A%22d2938061-83aa-4fa3-a6ff-10982e24675a%22%2C%22queries%22%3A%5B%7B%22refId%22%3A%22A%22%2C%22expr%22%3A%22%22%2C%22range%22%3Atrue%2C%22instant%22%3Atrue%2C%22datasource%22%3A%7B%22type%22%3A%22prometheus%22%2C%22uid%22%3A%22d2938061-83aa-4fa3-a6ff-10982e24675a%22%7D%7D%5D%2C%22range%22%3A%7B%22from%22%3A%22now-6h%22%2C%22to%22%3A%22now%22%7D%7D%7D&schemaVersion=1" handler=/api/datasources/uid/:uid/resources/*
-logger=context userId=1 orgId=1 uname=admin t=2023-12-13T20:16:39.618630345Z level=error msg="Internal server error" error="[plugin.downstreamError] client: failed to call resources: error querying resource: Get \"http://172.17.0.3:9090/api/v1/rules\": context canceled" remote_addr=10.0.0.1 traceID=
-logger=context userId=1 orgId=1 uname=admin t=2023-12-13T20:16:39.618779458Z level=error msg="Request Completed" method=GET path=/api/datasources/uid/eafabb41-bc95-4a85-b46c-1f54980634f1/resources/api/v1/rules status=500 remote_addr=10.0.0.1 time_ms=6718 duration=6.718890309s size=116 referer="http://10.0.0.5:3000/explore?orgId=1&panes=%7B%22vnZ%22%3A%7B%22datasource%22%3A%22ffc7e81c-5ba6-4ce1-ad44-3a9058333ae1%22%2C%22queries%22%3A%5B%5D%2C%22range%22%3A%7B%22from%22%3A%22now-6h%22%2C%22to%22%3A%22now%22%7D%7D%7D&schemaVersion=1" handler=/api/datasources/uid/:uid/resources/*
-logger=context userId=1 orgId=1 uname=admin t=2023-12-13T20:16:39.619480614Z level=error msg="Internal server error" error="[plugin.downstreamError] client: failed to call resources: error querying resource: Post \"http://172.17.0.3:9090/api/v1/query_exemplars\": context canceled" remote_addr=10.0.0.1 traceID=
-logger=context userId=1 orgId=1 uname=admin t=2023-12-13T20:16:39.619671287Z level=error msg="Request Completed" method=POST path=/api/datasources/uid/eafabb41-bc95-4a85-b46c-1f54980634f1/resources/api/v1/query_exemplars status=500 remote_addr=10.0.0.1 time_ms=6715 duration=6.715295319s size=116 referer="http://10.0.0.5:3000/explore?orgId=1&panes=%7B%22vnZ%22%3A%7B%22datasource%22%3A%22ffc7e81c-5ba6-4ce1-ad44-3a9058333ae1%22%2C%22queries%22%3A%5B%5D%2C%22range%22%3A%7B%22from%22%3A%22now-6h%22%2C%22to%22%3A%22now%22%7D%7D%7D&schemaVersion=1" handler=/api/datasources/uid/:uid/resources/*
-logger=live t=2023-12-13T20:16:59.049349897Z level=info msg="Initialized channel handler" channel=grafana/dashboard/uid/ed21322b-9f58-49b6-abd4-75dd2f1eb41d address=grafana/dashboard/uid/ed21322b-9f58-49b6-abd4-75dd2f1eb41d
-logger=context userId=1 orgId=1 uname=admin t=2023-12-13T20:17:04.007822282Z level=info msg="Request Completed" method=POST path=/api/ds/query status=400 remote_addr=10.0.0.1 time_ms=4919 duration=4.919914192s size=230 referer="http://10.0.0.5:3000/d/ed21322b-9f58-49b6-abd4-75dd2f1eb41d/kpis?orgId=1&refresh=5s" handler=/api/ds/query
-logger=context userId=1 orgId=1 uname=admin t=2023-12-13T20:17:04.014223547Z level=info msg="Request Completed" method=POST path=/api/ds/query status=400 remote_addr=10.0.0.1 time_ms=4921 duration=4.921452352s size=231 referer="http://10.0.0.5:3000/d/ed21322b-9f58-49b6-abd4-75dd2f1eb41d/kpis?orgId=1&refresh=5s" handler=/api/ds/query
-logger=context userId=1 orgId=1 uname=admin t=2023-12-13T20:17:04.022873646Z level=info msg="Request Completed" method=POST path=/api/ds/query status=400 remote_addr=10.0.0.1 time_ms=4926 duration=4.926596032s size=236 referer="http://10.0.0.5:3000/d/ed21322b-9f58-49b6-abd4-75dd2f1eb41d/kpis?orgId=1&refresh=5s" handler=/api/ds/query
-logger=context userId=1 orgId=1 uname=admin t=2023-12-13T20:17:14.018927823Z level=info msg="Request Completed" method=POST path=/api/ds/query status=400 remote_addr=10.0.0.1 time_ms=10002 duration=10.002473142s size=251 referer="http://10.0.0.5:3000/d/ed21322b-9f58-49b6-abd4-75dd2f1eb41d/kpis?orgId=1&refresh=5s" handler=/api/ds/query
-logger=context userId=1 orgId=1 uname=admin t=2023-12-13T20:17:14.031574737Z level=info msg="Request Completed" method=POST path=/api/ds/query status=400 remote_addr=10.0.0.1 time_ms=10003 duration=10.003306033s size=252 referer="http://10.0.0.5:3000/d/ed21322b-9f58-49b6-abd4-75dd2f1eb41d/kpis?orgId=1&refresh=5s" handler=/api/ds/query
-logger=context userId=1 orgId=1 uname=admin t=2023-12-13T20:17:14.036372422Z level=info msg="Request Completed" method=POST path=/api/ds/query status=400 remote_addr=10.0.0.1 time_ms=10003 duration=10.00300911s size=257 referer="http://10.0.0.5:3000/d/ed21322b-9f58-49b6-abd4-75dd2f1eb41d/kpis?orgId=1&refresh=5s" handler=/api/ds/query
-logger=context userId=1 orgId=1 uname=admin t=2023-12-13T20:17:29.023730782Z level=info msg="Request Completed" method=POST path=/api/ds/query status=400 remote_addr=10.0.0.1 time_ms=3977 duration=3.977799051s size=231 referer="http://10.0.0.5:3000/d/ed21322b-9f58-49b6-abd4-75dd2f1eb41d/kpis?orgId=1&refresh=5s" handler=/api/ds/query
-logger=context userId=1 orgId=1 uname=admin t=2023-12-13T20:17:29.024328534Z level=info msg="Request Completed" method=POST path=/api/ds/query status=400 remote_addr=10.0.0.1 time_ms=3992 duration=3.992780136s size=230 referer="http://10.0.0.5:3000/d/ed21322b-9f58-49b6-abd4-75dd2f1eb41d/kpis?orgId=1&refresh=5s" handler=/api/ds/query
-logger=context userId=1 orgId=1 uname=admin t=2023-12-13T20:17:29.026640619Z level=info msg="Request Completed" method=POST path=/api/ds/query status=400 remote_addr=10.0.0.1 time_ms=3977 duration=3.977768726s size=236 referer="http://10.0.0.5:3000/d/ed21322b-9f58-49b6-abd4-75dd2f1eb41d/kpis?orgId=1&refresh=5s" handler=/api/ds/query
-logger=context userId=1 orgId=1 uname=admin t=2023-12-13T20:17:39.024879208Z level=info msg="Request Completed" method=POST path=/api/ds/query status=400 remote_addr=10.0.0.1 time_ms=10002 duration=10.002943449s size=251 referer="http://10.0.0.5:3000/d/ed21322b-9f58-49b6-abd4-75dd2f1eb41d/kpis?orgId=1&refresh=5s" handler=/api/ds/query
-logger=context userId=1 orgId=1 uname=admin t=2023-12-13T20:17:39.025961009Z level=info msg="Request Completed" method=POST path=/api/ds/query status=400 remote_addr=10.0.0.1 time_ms=10002 duration=10.002294152s size=252 referer="http://10.0.0.5:3000/d/ed21322b-9f58-49b6-abd4-75dd2f1eb41d/kpis?orgId=1&refresh=5s" handler=/api/ds/query
-logger=context userId=1 orgId=1 uname=admin t=2023-12-13T20:17:39.038044452Z level=info msg="Request Completed" method=POST path=/api/ds/query status=400 remote_addr=10.0.0.1 time_ms=10002 duration=10.002247764s size=257 referer="http://10.0.0.5:3000/d/ed21322b-9f58-49b6-abd4-75dd2f1eb41d/kpis?orgId=1&refresh=5s" handler=/api/ds/query
-logger=context userId=1 orgId=1 uname=admin t=2023-12-13T20:18:08.09910212Z level=info msg="Request Completed" method=POST path=/api/ds/query status=400 remote_addr=10.0.0.1 time_ms=10004 duration=10.004917045s size=252 referer="http://10.0.0.5:3000/d/ed21322b-9f58-49b6-abd4-75dd2f1eb41d/kpis?from=now-5m&orgId=1&refresh=5s&to=now" handler=/api/ds/query
-logger=context userId=1 orgId=1 uname=admin t=2023-12-13T20:18:08.108632233Z level=info msg="Request Completed" method=POST path=/api/ds/query status=400 remote_addr=10.0.0.1 time_ms=10002 duration=10.002796994s size=257 referer="http://10.0.0.5:3000/d/ed21322b-9f58-49b6-abd4-75dd2f1eb41d/kpis?from=now-5m&orgId=1&refresh=5s&to=now" handler=/api/ds/query
-logger=context userId=1 orgId=1 uname=admin t=2023-12-13T20:18:22.198623013Z level=info msg="Request Completed" method=POST path=/api/ds/query status=400 remote_addr=10.0.0.1 time_ms=4977 duration=4.977725231s size=231 referer="http://10.0.0.5:3000/d/ed21322b-9f58-49b6-abd4-75dd2f1eb41d/kpis?from=now-5m&orgId=1&refresh=5s&to=now" handler=/api/ds/query
-logger=context userId=1 orgId=1 uname=admin t=2023-12-13T20:18:32.213422677Z level=info msg="Request Completed" method=POST path=/api/ds/query status=400 remote_addr=10.0.0.1 time_ms=10005 duration=10.005590757s size=252 referer="http://10.0.0.5:3000/d/ed21322b-9f58-49b6-abd4-75dd2f1eb41d/kpis?from=now-5m&orgId=1&refresh=5s&to=now&viewPanel=2" handler=/api/ds/query
-logger=server t=2023-12-13T20:20:38.212926266Z level=info msg="Shutdown started" reason="System signal: terminated"
-logger=tracing t=2023-12-13T20:20:38.21342983Z level=info msg="Closing tracing"
-logger=ticker t=2023-12-13T20:20:38.214479084Z level=info msg=stopped last_tick=2023-12-13T20:20:30Z
+logger=cleanup t=2023-12-20T00:01:50.739136598Z level=info msg="Completed cleanup jobs" duration=62.393575ms
+logger=grafana.update.checker t=2023-12-20T00:01:51.498999159Z level=info msg="Update check succeeded" duration=164.375678ms
+logger=plugins.update.checker t=2023-12-20T00:01:51.84424675Z level=info msg="Update check succeeded" duration=328.140061ms
+logger=infra.usagestats t=2023-12-20T00:03:00.702787813Z level=info msg="Usage stats are ready to report"
+logger=cleanup t=2023-12-20T00:11:50.766895327Z level=info msg="Completed cleanup jobs" duration=90.24636ms
+logger=grafana.update.checker t=2023-12-20T00:11:51.375589939Z level=info msg="Update check succeeded" duration=41.168844ms
+logger=plugins.update.checker t=2023-12-20T00:11:51.817347767Z level=info msg="Update check succeeded" duration=301.494611ms
+logger=cleanup t=2023-12-20T00:21:50.737061133Z level=info msg="Completed cleanup jobs" duration=61.213071ms
+logger=grafana.update.checker t=2023-12-20T00:21:51.376880687Z level=info msg="Update check succeeded" duration=41.867308ms
+logger=plugins.update.checker t=2023-12-20T00:21:51.823785078Z level=info msg="Update check succeeded" duration=307.693567ms
+logger=cleanup t=2023-12-20T00:31:50.740420395Z level=info msg="Completed cleanup jobs" duration=63.47515ms
+logger=grafana.update.checker t=2023-12-20T00:31:51.51103373Z level=info msg="Update check succeeded" duration=176.436051ms
+logger=plugins.update.checker t=2023-12-20T00:31:51.907637669Z level=info msg="Update check succeeded" duration=391.639026ms
+logger=infra.usagestats t=2023-12-20T00:33:00.705485738Z level=info msg="Usage stats are ready to report"
+logger=cleanup t=2023-12-20T00:41:50.765460761Z level=info msg="Completed cleanup jobs" duration=88.394749ms
+logger=grafana.update.checker t=2023-12-20T00:41:51.499696818Z level=info msg="Update check succeeded" duration=165.359421ms
+logger=plugins.update.checker t=2023-12-20T00:41:51.93242653Z level=info msg="Update check succeeded" duration=416.909262ms
+logger=cleanup t=2023-12-20T00:51:50.737762841Z level=info msg="Completed cleanup jobs" duration=61.369434ms
+logger=grafana.update.checker t=2023-12-20T00:51:51.502894318Z level=info msg="Update check succeeded" duration=168.743911ms
+logger=plugins.update.checker t=2023-12-20T00:51:51.98534086Z level=info msg="Update check succeeded" duration=469.396853ms
+logger=cleanup t=2023-12-20T01:01:50.738693171Z level=info msg="Completed cleanup jobs" duration=62.40713ms
+logger=grafana.update.checker t=2023-12-20T01:01:51.393457897Z level=info msg="Update check succeeded" duration=58.424972ms
+logger=plugins.update.checker t=2023-12-20T01:01:51.826714563Z level=info msg="Update check succeeded" duration=311.404262ms
+logger=infra.usagestats t=2023-12-20T01:03:00.700528218Z level=info msg="Usage stats are ready to report"
+logger=cleanup t=2023-12-20T01:11:50.768328592Z level=info msg="Completed cleanup jobs" duration=91.367205ms
+logger=grafana.update.checker t=2023-12-20T01:11:51.498153287Z level=info msg="Update check succeeded" duration=163.361795ms
+logger=plugins.update.checker t=2023-12-20T01:11:51.935629349Z level=info msg="Update check succeeded" duration=419.223414ms
+logger=cleanup t=2023-12-20T01:21:50.769465129Z level=info msg="Completed cleanup jobs" duration=92.695809ms
+logger=grafana.update.checker t=2023-12-20T01:21:51.384563646Z level=info msg="Update check succeeded" duration=49.481862ms
+logger=plugins.update.checker t=2023-12-20T01:21:51.822982687Z level=info msg="Update check succeeded" duration=307.69478ms
+logger=cleanup t=2023-12-20T01:31:50.836941413Z level=info msg="Completed cleanup jobs" duration=160.123483ms
+logger=grafana.update.checker t=2023-12-20T01:31:51.505322291Z level=info msg="Update check succeeded" duration=170.415425ms
+logger=plugins.update.checker t=2023-12-20T01:31:51.863521625Z level=info msg="Update check succeeded" duration=347.784811ms
+logger=infra.usagestats t=2023-12-20T01:33:00.702526813Z level=info msg="Usage stats are ready to report"
+logger=cleanup t=2023-12-20T01:41:50.742119771Z level=info msg="Completed cleanup jobs" duration=65.530222ms
+logger=grafana.update.checker t=2023-12-20T01:41:51.376942056Z level=info msg="Update check succeeded" duration=41.993219ms
+logger=plugins.update.checker t=2023-12-20T01:41:51.834960921Z level=info msg="Update check succeeded" duration=319.015497ms
+logger=cleanup t=2023-12-20T01:51:50.768800596Z level=info msg="Completed cleanup jobs" duration=92.352187ms
+logger=grafana.update.checker t=2023-12-20T01:51:51.502060918Z level=info msg="Update check succeeded" duration=166.935686ms
+logger=plugins.update.checker t=2023-12-20T01:51:51.824547931Z level=info msg="Update check succeeded" duration=308.526733ms
+logger=cleanup t=2023-12-20T02:01:50.765796164Z level=info msg="Completed cleanup jobs" duration=89.787909ms
+logger=grafana.update.checker t=2023-12-20T02:01:51.509420392Z level=info msg="Update check succeeded" duration=175.378339ms
+logger=plugins.update.checker t=2023-12-20T02:01:51.841645617Z level=info msg="Update check succeeded" duration=326.020002ms
+logger=infra.usagestats t=2023-12-20T02:03:00.702544166Z level=info msg="Usage stats are ready to report"
+logger=cleanup t=2023-12-20T02:11:50.740885694Z level=info msg="Completed cleanup jobs" duration=64.18637ms
+logger=grafana.update.checker t=2023-12-20T02:11:51.376940981Z level=info msg="Update check succeeded" duration=42.889119ms
+logger=plugins.update.checker t=2023-12-20T02:11:51.877735123Z level=info msg="Update check succeeded" duration=362.159222ms
+logger=cleanup t=2023-12-20T02:21:50.743254139Z level=info msg="Completed cleanup jobs" duration=66.57301ms
+logger=grafana.update.checker t=2023-12-20T02:21:51.50781505Z level=info msg="Update check succeeded" duration=173.13535ms
+logger=plugins.update.checker t=2023-12-20T02:21:51.834823618Z level=info msg="Update check succeeded" duration=318.822764ms
+logger=cleanup t=2023-12-20T02:31:50.793841887Z level=info msg="Completed cleanup jobs" duration=117.093702ms
+logger=grafana.update.checker t=2023-12-20T02:31:51.500539149Z level=info msg="Update check succeeded" duration=165.946809ms
+logger=plugins.update.checker t=2023-12-20T02:31:51.826148386Z level=info msg="Update check succeeded" duration=310.429819ms
+logger=infra.usagestats t=2023-12-20T02:33:00.708264157Z level=info msg="Usage stats are ready to report"
+logger=cleanup t=2023-12-20T02:41:50.767826179Z level=info msg="Completed cleanup jobs" duration=91.271499ms
+logger=grafana.update.checker t=2023-12-20T02:41:51.376086724Z level=info msg="Update check succeeded" duration=42.178174ms
+logger=plugins.update.checker t=2023-12-20T02:41:51.828251748Z level=info msg="Update check succeeded" duration=313.052259ms
+logger=cleanup t=2023-12-20T02:51:50.793613735Z level=info msg="Completed cleanup jobs" duration=116.506216ms
+logger=grafana.update.checker t=2023-12-20T02:51:51.501668237Z level=info msg="Update check succeeded" duration=167.502236ms
+logger=plugins.update.checker t=2023-12-20T02:51:51.881898127Z level=info msg="Update check succeeded" duration=366.177607ms
+logger=cleanup t=2023-12-20T03:01:50.766622995Z level=info msg="Completed cleanup jobs" duration=90.409658ms
+logger=grafana.update.checker t=2023-12-20T03:01:51.579499135Z level=info msg="Update check succeeded" duration=245.403601ms
+logger=plugins.update.checker t=2023-12-20T03:01:51.826260135Z level=info msg="Update check succeeded" duration=311.077231ms
+logger=infra.usagestats t=2023-12-20T03:03:00.702221989Z level=info msg="Usage stats are ready to report"
+logger=cleanup t=2023-12-20T03:11:50.787451785Z level=info msg="Completed cleanup jobs" duration=110.532352ms
+logger=grafana.update.checker t=2023-12-20T03:11:51.49708136Z level=info msg="Update check succeeded" duration=162.134946ms
+logger=plugins.update.checker t=2023-12-20T03:11:51.871449379Z level=info msg="Update check succeeded" duration=355.066169ms
+logger=cleanup t=2023-12-20T03:21:50.741905572Z level=info msg="Completed cleanup jobs" duration=65.34971ms
+logger=grafana.update.checker t=2023-12-20T03:21:51.763818924Z level=info msg="Update check succeeded" duration=429.612826ms
+logger=plugins.update.checker t=2023-12-20T03:21:51.832115271Z level=info msg="Update check succeeded" duration=316.645366ms
+logger=cleanup t=2023-12-20T03:31:50.773801669Z level=info msg="Completed cleanup jobs" duration=97.401425ms
+logger=grafana.update.checker t=2023-12-20T03:31:51.5005266Z level=info msg="Update check succeeded" duration=165.921807ms
+logger=plugins.update.checker t=2023-12-20T03:31:51.864196075Z level=info msg="Update check succeeded" duration=348.565504ms
+logger=infra.usagestats t=2023-12-20T03:33:00.702657662Z level=info msg="Usage stats are ready to report"
+logger=cleanup t=2023-12-20T03:41:50.769640776Z level=info msg="Completed cleanup jobs" duration=93.016059ms
+logger=grafana.update.checker t=2023-12-20T03:41:51.35020146Z level=error msg="Update check failed" error="failed to get latest.json repo from github.com: Get \"https://raw.githubusercontent.com/grafana/grafana/main/latest.json\": read tcp 10.0.0.5:33908->185.199.111.133:443: read: connection reset by peer" duration=15.381078ms
+logger=cleanup t=2023-12-20T03:51:50.741943648Z level=info msg="Completed cleanup jobs" duration=65.130823ms
+logger=grafana.update.checker t=2023-12-20T03:51:51.388293995Z level=error msg="Update check failed" error="failed to get latest.json repo from github.com: Get \"https://raw.githubusercontent.com/grafana/grafana/main/latest.json\": read tcp 10.0.0.5:43038->185.199.111.133:443: read: connection reset by peer" duration=54.307009ms
+logger=cleanup t=2023-12-20T04:01:50.739849781Z level=info msg="Completed cleanup jobs" duration=63.733278ms
+logger=grafana.update.checker t=2023-12-20T04:01:51.390743689Z level=error msg="Update check failed" error="failed to get latest.json repo from github.com: Get \"https://raw.githubusercontent.com/grafana/grafana/main/latest.json\": read tcp 10.0.0.5:36454->185.199.111.133:443: read: connection reset by peer" duration=56.060103ms
+logger=infra.usagestats t=2023-12-20T04:03:00.702721113Z level=info msg="Usage stats are ready to report"
+logger=cleanup t=2023-12-20T04:11:50.742275166Z level=info msg="Completed cleanup jobs" duration=65.253618ms
+logger=grafana.update.checker t=2023-12-20T04:11:51.393649001Z level=error msg="Update check failed" error="failed to get latest.json repo from github.com: Get \"https://raw.githubusercontent.com/grafana/grafana/main/latest.json\": read tcp 10.0.0.5:52572->185.199.110.133:443: read: connection reset by peer" duration=59.289355ms
+logger=cleanup t=2023-12-20T04:21:50.769436383Z level=info msg="Completed cleanup jobs" duration=92.32977ms
+logger=grafana.update.checker t=2023-12-20T04:21:51.355673545Z level=error msg="Update check failed" error="failed to get latest.json repo from github.com: Get \"https://raw.githubusercontent.com/grafana/grafana/main/latest.json\": read tcp 10.0.0.5:45272->185.199.109.133:443: read: connection reset by peer" duration=21.630225ms
+logger=cleanup t=2023-12-20T04:31:50.767340312Z level=info msg="Completed cleanup jobs" duration=91.205654ms
+logger=grafana.update.checker t=2023-12-20T04:31:51.347263629Z level=error msg="Update check failed" error="failed to get latest.json repo from github.com: Get \"https://raw.githubusercontent.com/grafana/grafana/main/latest.json\": read tcp 10.0.0.5:37260->185.199.109.133:443: read: connection reset by peer" duration=13.048086ms
+logger=infra.usagestats t=2023-12-20T04:33:00.70331588Z level=info msg="Usage stats are ready to report"
+logger=cleanup t=2023-12-20T04:41:50.766340962Z level=info msg="Completed cleanup jobs" duration=89.805118ms
+logger=grafana.update.checker t=2023-12-20T04:41:51.390599622Z level=error msg="Update check failed" error="failed to get latest.json repo from github.com: Get \"https://raw.githubusercontent.com/grafana/grafana/main/latest.json\": read tcp 10.0.0.5:33400->185.199.109.133:443: read: connection reset by peer" duration=55.912952ms
+logger=cleanup t=2023-12-20T04:51:50.744232694Z level=info msg="Completed cleanup jobs" duration=67.344886ms
+logger=grafana.update.checker t=2023-12-20T04:51:51.349727032Z level=error msg="Update check failed" error="failed to get latest.json repo from github.com: Get \"https://raw.githubusercontent.com/grafana/grafana/main/latest.json\": read tcp 10.0.0.5:53606->185.199.109.133:443: read: connection reset by peer" duration=15.673645ms
+logger=cleanup t=2023-12-20T05:01:50.743243475Z level=info msg="Completed cleanup jobs" duration=66.037889ms
+logger=grafana.update.checker t=2023-12-20T05:01:51.349202005Z level=error msg="Update check failed" error="failed to get latest.json repo from github.com: Get \"https://raw.githubusercontent.com/grafana/grafana/main/latest.json\": read tcp 10.0.0.5:51604->185.199.109.133:443: read: connection reset by peer" duration=15.251752ms
+logger=infra.usagestats t=2023-12-20T05:03:00.7028886Z level=info msg="Usage stats are ready to report"
+logger=cleanup t=2023-12-20T05:11:50.74176137Z level=info msg="Completed cleanup jobs" duration=64.925785ms
+logger=grafana.update.checker t=2023-12-20T05:11:51.352207007Z level=error msg="Update check failed" error="failed to get latest.json repo from github.com: Get \"https://raw.githubusercontent.com/grafana/grafana/main/latest.json\": read tcp 10.0.0.5:38596->185.199.109.133:443: read: connection reset by peer" duration=17.485489ms
+logger=cleanup t=2023-12-20T05:21:50.742501152Z level=info msg="Completed cleanup jobs" duration=65.718721ms
+logger=grafana.update.checker t=2023-12-20T05:21:51.573459261Z level=error msg="Update check failed" error="failed to get latest.json repo from github.com: Get \"https://raw.githubusercontent.com/grafana/grafana/main/latest.json\": read tcp 10.0.0.5:34638->185.199.110.133:443: read: connection reset by peer" duration=239.530123ms
+logger=cleanup t=2023-12-20T05:31:50.749075628Z level=info msg="Completed cleanup jobs" duration=72.697663ms
+logger=grafana.update.checker t=2023-12-20T05:31:51.349569067Z level=error msg="Update check failed" error="failed to get latest.json repo from github.com: Get \"https://raw.githubusercontent.com/grafana/grafana/main/latest.json\": read tcp 10.0.0.5:45184->185.199.110.133:443: read: connection reset by peer" duration=14.566954ms
+logger=infra.usagestats t=2023-12-20T05:33:00.702677092Z level=info msg="Usage stats are ready to report"
+logger=cleanup t=2023-12-20T05:41:50.743726449Z level=info msg="Completed cleanup jobs" duration=66.832097ms
+logger=grafana.update.checker t=2023-12-20T05:41:51.349161735Z level=error msg="Update check failed" error="failed to get latest.json repo from github.com: Get \"https://raw.githubusercontent.com/grafana/grafana/main/latest.json\": read tcp 10.0.0.5:34092->185.199.110.133:443: read: connection reset by peer" duration=14.981584ms
+logger=cleanup t=2023-12-20T05:51:50.766817762Z level=info msg="Completed cleanup jobs" duration=90.319369ms
+logger=grafana.update.checker t=2023-12-20T05:51:51.392455211Z level=error msg="Update check failed" error="failed to get latest.json repo from github.com: Get \"https://raw.githubusercontent.com/grafana/grafana/main/latest.json\": read tcp 10.0.0.5:37148->185.199.110.133:443: read: connection reset by peer" duration=57.666918ms
+logger=cleanup t=2023-12-20T06:01:50.70409642Z level=info msg="Completed cleanup jobs" duration=26.874898ms
+logger=grafana.update.checker t=2023-12-20T06:01:51.390142195Z level=error msg="Update check failed" error="failed to get latest.json repo from github.com: Get \"https://raw.githubusercontent.com/grafana/grafana/main/latest.json\": read tcp 10.0.0.5:40292->185.199.110.133:443: read: connection reset by peer" duration=55.461112ms
+logger=infra.usagestats t=2023-12-20T06:03:00.70270929Z level=info msg="Usage stats are ready to report"
+logger=cleanup t=2023-12-20T06:11:50.70582896Z level=info msg="Completed cleanup jobs" duration=29.240435ms
+logger=grafana.update.checker t=2023-12-20T06:11:51.396976141Z level=error msg="Update check failed" error="failed to get latest.json repo from github.com: Get \"https://raw.githubusercontent.com/grafana/grafana/main/latest.json\": read tcp 10.0.0.5:41676->185.199.108.133:443: read: connection reset by peer" duration=61.893294ms
+logger=cleanup t=2023-12-20T06:21:50.707868346Z level=info msg="Completed cleanup jobs" duration=31.120499ms
+logger=grafana.update.checker t=2023-12-20T06:21:51.398322799Z level=error msg="Update check failed" error="failed to get latest.json repo from github.com: Get \"https://raw.githubusercontent.com/grafana/grafana/main/latest.json\": read tcp 10.0.0.5:51032->185.199.109.133:443: read: connection reset by peer" duration=63.519102ms
+logger=cleanup t=2023-12-20T06:31:50.741721963Z level=info msg="Completed cleanup jobs" duration=64.686674ms
+logger=grafana.update.checker t=2023-12-20T06:31:51.449263444Z level=error msg="Update check failed" error="failed to get latest.json repo from github.com: Get \"https://raw.githubusercontent.com/grafana/grafana/main/latest.json\": read tcp 10.0.0.5:41180->185.199.109.133:443: read: connection reset by peer" duration=114.531152ms
+logger=infra.usagestats t=2023-12-20T06:33:00.703164235Z level=info msg="Usage stats are ready to report"
+logger=cleanup t=2023-12-20T06:41:50.705565628Z level=info msg="Completed cleanup jobs" duration=28.494869ms
+logger=grafana.update.checker t=2023-12-20T06:41:51.391046414Z level=error msg="Update check failed" error="failed to get latest.json repo from github.com: Get \"https://raw.githubusercontent.com/grafana/grafana/main/latest.json\": read tcp 10.0.0.5:56660->185.199.109.133:443: read: connection reset by peer" duration=56.334791ms
+logger=cleanup t=2023-12-20T06:51:50.70620844Z level=info msg="Completed cleanup jobs" duration=29.399745ms
+logger=grafana.update.checker t=2023-12-20T06:51:51.349725546Z level=error msg="Update check failed" error="failed to get latest.json repo from github.com: Get \"https://raw.githubusercontent.com/grafana/grafana/main/latest.json\": read tcp 10.0.0.5:34110->185.199.109.133:443: read: connection reset by peer" duration=15.290132ms
+logger=cleanup t=2023-12-20T07:01:50.706003737Z level=info msg="Completed cleanup jobs" duration=29.212563ms
+logger=grafana.update.checker t=2023-12-20T07:01:51.351132431Z level=error msg="Update check failed" error="failed to get latest.json repo from github.com: Get \"https://raw.githubusercontent.com/grafana/grafana/main/latest.json\": read tcp 10.0.0.5:33556->185.199.109.133:443: read: connection reset by peer" duration=16.060554ms
+logger=infra.usagestats t=2023-12-20T07:03:00.703658665Z level=info msg="Usage stats are ready to report"
+logger=cleanup t=2023-12-20T07:11:50.721697666Z level=info msg="Completed cleanup jobs" duration=44.588559ms
+logger=grafana.update.checker t=2023-12-20T07:11:59.341228365Z level=error msg="Update check failed" error="failed to get latest.json repo from github.com: Get \"https://raw.githubusercontent.com/grafana/grafana/main/latest.json\": dial tcp [2606:50c0:8001::154]:443: connect: cannot assign requested address" duration=8.006505143s
+logger=cleanup t=2023-12-20T07:21:50.705779024Z level=info msg="Completed cleanup jobs" duration=28.877209ms
+logger=grafana.update.checker t=2023-12-20T07:21:51.393185463Z level=error msg="Update check failed" error="failed to get latest.json repo from github.com: Get \"https://raw.githubusercontent.com/grafana/grafana/main/latest.json\": read tcp 10.0.0.5:58222->185.199.108.133:443: read: connection reset by peer" duration=59.11119ms
+logger=cleanup t=2023-12-20T07:31:50.793715521Z level=info msg="Completed cleanup jobs" duration=116.829448ms
+logger=grafana.update.checker t=2023-12-20T07:31:51.393211274Z level=error msg="Update check failed" error="failed to get latest.json repo from github.com: Get \"https://raw.githubusercontent.com/grafana/grafana/main/latest.json\": read tcp 10.0.0.5:49710->185.199.110.133:443: read: connection reset by peer" duration=58.759976ms
+logger=infra.usagestats t=2023-12-20T07:33:00.703154807Z level=info msg="Usage stats are ready to report"
+logger=cleanup t=2023-12-20T07:41:50.705417265Z level=info msg="Completed cleanup jobs" duration=28.382884ms
+logger=grafana.update.checker t=2023-12-20T07:41:51.350066536Z level=error msg="Update check failed" error="failed to get latest.json repo from github.com: Get \"https://raw.githubusercontent.com/grafana/grafana/main/latest.json\": read tcp 10.0.0.5:59440->185.199.110.133:443: read: connection reset by peer" duration=15.469071ms
+logger=cleanup t=2023-12-20T07:51:50.702973368Z level=info msg="Completed cleanup jobs" duration=26.500191ms
+logger=grafana.update.checker t=2023-12-20T07:51:51.390092283Z level=error msg="Update check failed" error="failed to get latest.json repo from github.com: Get \"https://raw.githubusercontent.com/grafana/grafana/main/latest.json\": read tcp 10.0.0.5:47040->185.199.110.133:443: read: connection reset by peer" duration=55.926865ms
+logger=cleanup t=2023-12-20T08:01:50.703796256Z level=info msg="Completed cleanup jobs" duration=27.669169ms
+logger=grafana.update.checker t=2023-12-20T08:01:51.349878637Z level=error msg="Update check failed" error="failed to get latest.json repo from github.com: Get \"https://raw.githubusercontent.com/grafana/grafana/main/latest.json\": read tcp 10.0.0.5:42122->185.199.110.133:443: read: connection reset by peer" duration=14.969442ms
+logger=infra.usagestats t=2023-12-20T08:03:00.703062936Z level=info msg="Usage stats are ready to report"
+logger=cleanup t=2023-12-20T08:11:50.706177949Z level=info msg="Completed cleanup jobs" duration=29.298305ms
+logger=grafana.update.checker t=2023-12-20T08:11:51.424012128Z level=error msg="Update check failed" error="failed to get latest.json repo from github.com: Get \"https://raw.githubusercontent.com/grafana/grafana/main/latest.json\": read tcp 10.0.0.5:60630->185.199.111.133:443: read: connection reset by peer" duration=89.848485ms
+logger=cleanup t=2023-12-20T08:21:50.706294456Z level=info msg="Completed cleanup jobs" duration=30.047444ms
+logger=grafana.update.checker t=2023-12-20T08:21:51.391510901Z level=error msg="Update check failed" error="failed to get latest.json repo from github.com: Get \"https://raw.githubusercontent.com/grafana/grafana/main/latest.json\": read tcp 10.0.0.5:43106->185.199.109.133:443: read: connection reset by peer" duration=56.603548ms
+logger=cleanup t=2023-12-20T08:31:50.705145964Z level=info msg="Completed cleanup jobs" duration=29.052483ms
+logger=grafana.update.checker t=2023-12-20T08:31:51.357686913Z level=error msg="Update check failed" error="failed to get latest.json repo from github.com: Get \"https://raw.githubusercontent.com/grafana/grafana/main/latest.json\": read tcp 10.0.0.5:44006->185.199.109.133:443: read: connection reset by peer" duration=22.57612ms
+logger=infra.usagestats t=2023-12-20T08:33:00.703641919Z level=info msg="Usage stats are ready to report"
+logger=cleanup t=2023-12-20T08:41:50.704802179Z level=info msg="Completed cleanup jobs" duration=28.482645ms
+logger=grafana.update.checker t=2023-12-20T08:41:51.390271961Z level=error msg="Update check failed" error="failed to get latest.json repo from github.com: Get \"https://raw.githubusercontent.com/grafana/grafana/main/latest.json\": read tcp 10.0.0.5:33024->185.199.109.133:443: read: connection reset by peer" duration=55.636389ms
+logger=cleanup t=2023-12-20T08:51:50.705683251Z level=info msg="Completed cleanup jobs" duration=29.066805ms
+logger=grafana.update.checker t=2023-12-20T08:51:51.349469239Z level=error msg="Update check failed" error="failed to get latest.json repo from github.com: Get \"https://raw.githubusercontent.com/grafana/grafana/main/latest.json\": read tcp 10.0.0.5:37746->185.199.109.133:443: read: connection reset by peer" duration=15.138398ms
+logger=cleanup t=2023-12-20T09:01:50.704404965Z level=info msg="Completed cleanup jobs" duration=27.482298ms
+logger=grafana.update.checker t=2023-12-20T09:01:51.389779057Z level=error msg="Update check failed" error="failed to get latest.json repo from github.com: Get \"https://raw.githubusercontent.com/grafana/grafana/main/latest.json\": read tcp 10.0.0.5:57938->185.199.109.133:443: read: connection reset by peer" duration=55.751536ms
+logger=infra.usagestats t=2023-12-20T09:03:00.703037063Z level=info msg="Usage stats are ready to report"
+logger=cleanup t=2023-12-20T09:11:50.739662591Z level=info msg="Completed cleanup jobs" duration=63.047936ms
+logger=grafana.update.checker t=2023-12-20T09:11:51.357059069Z level=error msg="Update check failed" error="failed to get latest.json repo from github.com: Get \"https://raw.githubusercontent.com/grafana/grafana/main/latest.json\": read tcp 10.0.0.5:40722->185.199.109.133:443: read: connection reset by peer" duration=22.202941ms
+logger=cleanup t=2023-12-20T09:21:50.7042991Z level=info msg="Completed cleanup jobs" duration=27.946945ms
+logger=grafana.update.checker t=2023-12-20T09:21:51.390435675Z level=error msg="Update check failed" error="failed to get latest.json repo from github.com: Get \"https://raw.githubusercontent.com/grafana/grafana/main/latest.json\": read tcp 10.0.0.5:49926->185.199.108.133:443: read: connection reset by peer" duration=55.629577ms
+logger=cleanup t=2023-12-20T09:31:50.724496698Z level=info msg="Completed cleanup jobs" duration=47.584652ms
+logger=grafana.update.checker t=2023-12-20T09:31:51.396892771Z level=error msg="Update check failed" error="failed to get latest.json repo from github.com: Get \"https://raw.githubusercontent.com/grafana/grafana/main/latest.json\": read tcp 10.0.0.5:36942->185.199.108.133:443: read: connection reset by peer" duration=62.648438ms
+logger=infra.usagestats t=2023-12-20T09:33:00.702779076Z level=info msg="Usage stats are ready to report"
+logger=cleanup t=2023-12-20T09:41:50.704786495Z level=info msg="Completed cleanup jobs" duration=28.148406ms
+logger=grafana.update.checker t=2023-12-20T09:41:51.390251499Z level=error msg="Update check failed" error="failed to get latest.json repo from github.com: Get \"https://raw.githubusercontent.com/grafana/grafana/main/latest.json\": read tcp 10.0.0.5:44104->185.199.108.133:443: read: connection reset by peer" duration=55.989953ms
+logger=cleanup t=2023-12-20T09:51:50.723580446Z level=info msg="Completed cleanup jobs" duration=46.493718ms
+logger=grafana.update.checker t=2023-12-20T09:51:51.348711975Z level=error msg="Update check failed" error="failed to get latest.json repo from github.com: Get \"https://raw.githubusercontent.com/grafana/grafana/main/latest.json\": read tcp 10.0.0.5:49204->185.199.108.133:443: read: connection reset by peer" duration=13.927529ms
+logger=cleanup t=2023-12-20T10:01:50.70440628Z level=info msg="Completed cleanup jobs" duration=27.581043ms
+logger=grafana.update.checker t=2023-12-20T10:01:51.349596316Z level=error msg="Update check failed" error="failed to get latest.json repo from github.com: Get \"https://raw.githubusercontent.com/grafana/grafana/main/latest.json\": read tcp 10.0.0.5:40302->185.199.108.133:443: read: connection reset by peer" duration=14.97561ms
+logger=infra.usagestats t=2023-12-20T10:03:00.702665272Z level=info msg="Usage stats are ready to report"
+logger=cleanup t=2023-12-20T10:11:50.705240079Z level=info msg="Completed cleanup jobs" duration=28.608832ms
+logger=grafana.update.checker t=2023-12-20T10:11:51.392707176Z level=error msg="Update check failed" error="failed to get latest.json repo from github.com: Get \"https://raw.githubusercontent.com/grafana/grafana/main/latest.json\": read tcp 10.0.0.5:37278->185.199.109.133:443: read: connection reset by peer" duration=58.740779ms
+logger=cleanup t=2023-12-20T10:21:50.743874199Z level=info msg="Completed cleanup jobs" duration=67.022099ms
+logger=grafana.update.checker t=2023-12-20T10:21:51.392239479Z level=error msg="Update check failed" error="failed to get latest.json repo from github.com: Get \"https://raw.githubusercontent.com/grafana/grafana/main/latest.json\": read tcp 10.0.0.5:48472->185.199.109.133:443: read: connection reset by peer" duration=58.105424ms
+logger=cleanup t=2023-12-20T10:31:50.721826947Z level=info msg="Completed cleanup jobs" duration=45.816378ms
+logger=grafana.update.checker t=2023-12-20T10:31:51.356834811Z level=error msg="Update check failed" error="failed to get latest.json repo from github.com: Get \"https://raw.githubusercontent.com/grafana/grafana/main/latest.json\": read tcp 10.0.0.5:42578->185.199.108.133:443: read: connection reset by peer" duration=21.874331ms
+logger=infra.usagestats t=2023-12-20T10:33:00.705263811Z level=info msg="Usage stats are ready to report"
+logger=cleanup t=2023-12-20T10:41:50.705749429Z level=info msg="Completed cleanup jobs" duration=28.718117ms
+logger=grafana.update.checker t=2023-12-20T10:41:51.390558782Z level=error msg="Update check failed" error="failed to get latest.json repo from github.com: Get \"https://raw.githubusercontent.com/grafana/grafana/main/latest.json\": read tcp 10.0.0.5:43386->185.199.108.133:443: read: connection reset by peer" duration=56.63661ms
+logger=cleanup t=2023-12-20T10:51:50.76844042Z level=info msg="Completed cleanup jobs" duration=91.510305ms
+logger=grafana.update.checker t=2023-12-20T10:51:51.389775961Z level=error msg="Update check failed" error="failed to get latest.json repo from github.com: Get \"https://raw.githubusercontent.com/grafana/grafana/main/latest.json\": read tcp 10.0.0.5:56638->185.199.108.133:443: read: connection reset by peer" duration=55.771269ms
+logger=cleanup t=2023-12-20T11:01:50.70465098Z level=info msg="Completed cleanup jobs" duration=28.389962ms
+logger=grafana.update.checker t=2023-12-20T11:01:51.389399179Z level=error msg="Update check failed" error="failed to get latest.json repo from github.com: Get \"https://raw.githubusercontent.com/grafana/grafana/main/latest.json\": read tcp 10.0.0.5:39948->185.199.108.133:443: read: connection reset by peer" duration=55.130757ms
+logger=infra.usagestats t=2023-12-20T11:03:00.703535144Z level=info msg="Usage stats are ready to report"
+logger=cleanup t=2023-12-20T11:11:50.742353768Z level=info msg="Completed cleanup jobs" duration=65.425241ms
+logger=grafana.update.checker t=2023-12-20T11:11:51.359106678Z level=error msg="Update check failed" error="failed to get latest.json repo from github.com: Get \"https://raw.githubusercontent.com/grafana/grafana/main/latest.json\": read tcp 10.0.0.5:46404->185.199.108.133:443: read: connection reset by peer" duration=24.34971ms
+logger=cleanup t=2023-12-20T11:21:50.770198615Z level=info msg="Completed cleanup jobs" duration=93.191204ms
+logger=grafana.update.checker t=2023-12-20T11:21:51.349851822Z level=error msg="Update check failed" error="failed to get latest.json repo from github.com: Get \"https://raw.githubusercontent.com/grafana/grafana/main/latest.json\": read tcp 10.0.0.5:60882->185.199.109.133:443: read: connection reset by peer" duration=15.85546ms
+logger=cleanup t=2023-12-20T11:31:50.745153041Z level=info msg="Completed cleanup jobs" duration=68.33199ms
+logger=grafana.update.checker t=2023-12-20T11:31:51.443147975Z level=error msg="Update check failed" error="failed to get latest.json repo from github.com: Get \"https://raw.githubusercontent.com/grafana/grafana/main/latest.json\": read tcp 10.0.0.5:53928->185.199.109.133:443: read: connection reset by peer" duration=108.928632ms
+logger=infra.usagestats t=2023-12-20T11:33:00.702391737Z level=info msg="Usage stats are ready to report"
+logger=cleanup t=2023-12-20T11:41:50.744315068Z level=info msg="Completed cleanup jobs" duration=67.392908ms
+logger=grafana.update.checker t=2023-12-20T11:41:51.349524099Z level=error msg="Update check failed" error="failed to get latest.json repo from github.com: Get \"https://raw.githubusercontent.com/grafana/grafana/main/latest.json\": read tcp 10.0.0.5:49084->185.199.109.133:443: read: connection reset by peer" duration=15.408264ms
+logger=cleanup t=2023-12-20T11:51:50.744077174Z level=info msg="Completed cleanup jobs" duration=67.218677ms
+logger=grafana.update.checker t=2023-12-20T11:51:51.392691556Z level=error msg="Update check failed" error="failed to get latest.json repo from github.com: Get \"https://raw.githubusercontent.com/grafana/grafana/main/latest.json\": read tcp 10.0.0.5:43024->185.199.109.133:443: read: connection reset by peer" duration=58.566225ms
+logger=cleanup t=2023-12-20T12:01:50.741695935Z level=info msg="Completed cleanup jobs" duration=65.051611ms
+logger=grafana.update.checker t=2023-12-20T12:01:51.349590078Z level=error msg="Update check failed" error="failed to get latest.json repo from github.com: Get \"https://raw.githubusercontent.com/grafana/grafana/main/latest.json\": read tcp 10.0.0.5:54490->185.199.109.133:443: read: connection reset by peer" duration=15.4396ms
+logger=infra.usagestats t=2023-12-20T12:03:00.703260244Z level=info msg="Usage stats are ready to report"
+logger=cleanup t=2023-12-20T12:11:50.767557993Z level=info msg="Completed cleanup jobs" duration=91.433981ms
+logger=grafana.update.checker t=2023-12-20T12:11:51.394534106Z level=error msg="Update check failed" error="failed to get latest.json repo from github.com: Get \"https://raw.githubusercontent.com/grafana/grafana/main/latest.json\": read tcp 10.0.0.5:58922->185.199.108.133:443: read: connection reset by peer" duration=60.562106ms
+logger=cleanup t=2023-12-20T12:21:50.769288077Z level=info msg="Completed cleanup jobs" duration=92.450045ms
+logger=grafana.update.checker t=2023-12-20T12:21:51.349307057Z level=error msg="Update check failed" error="failed to get latest.json repo from github.com: Get \"https://raw.githubusercontent.com/grafana/grafana/main/latest.json\": read tcp 10.0.0.5:60690->185.199.111.133:443: read: connection reset by peer" duration=15.193884ms
+logger=cleanup t=2023-12-20T12:31:50.768460894Z level=info msg="Completed cleanup jobs" duration=91.239182ms
+logger=grafana.update.checker t=2023-12-20T12:31:51.431560616Z level=error msg="Update check failed" error="failed to get latest.json repo from github.com: Get \"https://raw.githubusercontent.com/grafana/grafana/main/latest.json\": read tcp 10.0.0.5:35774->185.199.111.133:443: read: connection reset by peer" duration=96.644768ms
+logger=infra.usagestats t=2023-12-20T12:33:00.702447063Z level=info msg="Usage stats are ready to report"
+logger=cleanup t=2023-12-20T12:41:50.766799269Z level=info msg="Completed cleanup jobs" duration=90.679634ms
+logger=grafana.update.checker t=2023-12-20T12:41:51.389356887Z level=error msg="Update check failed" error="failed to get latest.json repo from github.com: Get \"https://raw.githubusercontent.com/grafana/grafana/main/latest.json\": read tcp 10.0.0.5:58988->185.199.111.133:443: read: connection reset by peer" duration=55.106611ms
+logger=cleanup t=2023-12-20T12:51:50.743674413Z level=info msg="Completed cleanup jobs" duration=66.906732ms
+logger=grafana.update.checker t=2023-12-20T12:51:51.350279548Z level=error msg="Update check failed" error="failed to get latest.json repo from github.com: Get \"https://raw.githubusercontent.com/grafana/grafana/main/latest.json\": read tcp 10.0.0.5:60328->185.199.111.133:443: read: connection reset by peer" duration=15.404919ms
+logger=cleanup t=2023-12-20T13:01:50.766298686Z level=info msg="Completed cleanup jobs" duration=90.306769ms
+logger=grafana.update.checker t=2023-12-20T13:01:51.390683203Z level=error msg="Update check failed" error="failed to get latest.json repo from github.com: Get \"https://raw.githubusercontent.com/grafana/grafana/main/latest.json\": read tcp 10.0.0.5:34018->185.199.111.133:443: read: connection reset by peer" duration=56.136549ms
+logger=infra.usagestats t=2023-12-20T13:03:00.704870274Z level=info msg="Usage stats are ready to report"
+logger=cleanup t=2023-12-20T13:11:50.768440898Z level=info msg="Completed cleanup jobs" duration=91.978101ms
+logger=grafana.update.checker t=2023-12-20T13:11:51.385977045Z level=error msg="Update check failed" error="failed to get latest.json repo from github.com: Get \"https://raw.githubusercontent.com/grafana/grafana/main/latest.json\": read tcp 10.0.0.5:37836->185.199.109.133:443: read: connection reset by peer" duration=50.846387ms
+logger=cleanup t=2023-12-20T13:21:50.764779512Z level=info msg="Completed cleanup jobs" duration=88.157557ms
+logger=grafana.update.checker t=2023-12-20T13:21:51.391610171Z level=error msg="Update check failed" error="failed to get latest.json repo from github.com: Get \"https://raw.githubusercontent.com/grafana/grafana/main/latest.json\": read tcp 10.0.0.5:44082->185.199.108.133:443: read: connection reset by peer" duration=56.511343ms
+logger=cleanup t=2023-12-20T13:31:50.72409079Z level=info msg="Completed cleanup jobs" duration=44.431138ms
+logger=grafana.update.checker t=2023-12-20T13:31:51.390977589Z level=error msg="Update check failed" error="failed to get latest.json repo from github.com: Get \"https://raw.githubusercontent.com/grafana/grafana/main/latest.json\": read tcp 10.0.0.5:48832->185.199.108.133:443: read: connection reset by peer" duration=55.830804ms
+logger=infra.usagestats t=2023-12-20T13:33:00.704284355Z level=info msg="Usage stats are ready to report"
+logger=cleanup t=2023-12-20T13:41:50.705569734Z level=info msg="Completed cleanup jobs" duration=28.675429ms
+logger=grafana.update.checker t=2023-12-20T13:41:51.392759734Z level=error msg="Update check failed" error="failed to get latest.json repo from github.com: Get \"https://raw.githubusercontent.com/grafana/grafana/main/latest.json\": read tcp 10.0.0.5:45366->185.199.108.133:443: read: connection reset by peer" duration=58.098747ms
+logger=cleanup t=2023-12-20T13:51:50.742553633Z level=info msg="Completed cleanup jobs" duration=66.447034ms
+logger=grafana.update.checker t=2023-12-20T13:51:51.356560484Z level=error msg="Update check failed" error="failed to get latest.json repo from github.com: Get \"https://raw.githubusercontent.com/grafana/grafana/main/latest.json\": read tcp 10.0.0.5:37094->185.199.110.133:443: read: connection reset by peer" duration=21.969754ms
+logger=cleanup t=2023-12-20T14:01:50.767325174Z level=info msg="Completed cleanup jobs" duration=90.8321ms
+logger=grafana.update.checker t=2023-12-20T14:01:51.390653767Z level=error msg="Update check failed" error="failed to get latest.json repo from github.com: Get \"https://raw.githubusercontent.com/grafana/grafana/main/latest.json\": read tcp 10.0.0.5:36450->185.199.109.133:443: read: connection reset by peer" duration=55.973049ms
+logger=infra.usagestats t=2023-12-20T14:03:00.702529447Z level=info msg="Usage stats are ready to report"
+logger=cleanup t=2023-12-20T14:11:50.741914108Z level=info msg="Completed cleanup jobs" duration=65.368504ms
+logger=grafana.update.checker t=2023-12-20T14:11:51.396697921Z level=error msg="Update check failed" error="failed to get latest.json repo from github.com: Get \"https://raw.githubusercontent.com/grafana/grafana/main/latest.json\": read tcp 10.0.0.5:51654->185.199.110.133:443: read: connection reset by peer" duration=62.757041ms
+logger=cleanup t=2023-12-20T14:21:50.70602845Z level=info msg="Completed cleanup jobs" duration=29.14007ms
+logger=grafana.update.checker t=2023-12-20T14:21:51.391009687Z level=error msg="Update check failed" error="failed to get latest.json repo from github.com: Get \"https://raw.githubusercontent.com/grafana/grafana/main/latest.json\": read tcp 10.0.0.5:56544->185.199.108.133:443: read: connection reset by peer" duration=56.082805ms
+logger=cleanup t=2023-12-20T14:31:50.705409509Z level=info msg="Completed cleanup jobs" duration=28.75694ms
+logger=grafana.update.checker t=2023-12-20T14:31:51.389722757Z level=error msg="Update check failed" error="failed to get latest.json repo from github.com: Get \"https://raw.githubusercontent.com/grafana/grafana/main/latest.json\": read tcp 10.0.0.5:42014->185.199.108.133:443: read: connection reset by peer" duration=55.721007ms
+logger=infra.usagestats t=2023-12-20T14:33:00.702993582Z level=info msg="Usage stats are ready to report"
+logger=cleanup t=2023-12-20T14:41:50.707395268Z level=info msg="Completed cleanup jobs" duration=30.821036ms
+logger=grafana.update.checker t=2023-12-20T14:41:51.395960047Z level=error msg="Update check failed" error="failed to get latest.json repo from github.com: Get \"https://raw.githubusercontent.com/grafana/grafana/main/latest.json\": read tcp 10.0.0.5:58876->185.199.108.133:443: read: connection reset by peer" duration=60.934647ms
+logger=cleanup t=2023-12-20T14:51:50.70612236Z level=info msg="Completed cleanup jobs" duration=29.213663ms
+logger=grafana.update.checker t=2023-12-20T14:51:51.417779288Z level=error msg="Update check failed" error="failed to get latest.json repo from github.com: Get \"https://raw.githubusercontent.com/grafana/grafana/main/latest.json\": read tcp 10.0.0.5:57142->185.199.110.133:443: read: connection reset by peer" duration=83.763319ms
+logger=cleanup t=2023-12-20T15:01:50.705100026Z level=info msg="Completed cleanup jobs" duration=28.01857ms
+logger=grafana.update.checker t=2023-12-20T15:01:51.39433064Z level=error msg="Update check failed" error="failed to get latest.json repo from github.com: Get \"https://raw.githubusercontent.com/grafana/grafana/main/latest.json\": read tcp 10.0.0.5:54484->185.199.111.133:443: read: connection reset by peer" duration=59.547683ms
+logger=infra.usagestats t=2023-12-20T15:03:00.703318791Z level=info msg="Usage stats are ready to report"
+logger=cleanup t=2023-12-20T15:11:50.710279916Z level=info msg="Completed cleanup jobs" duration=33.52368ms
+logger=grafana.update.checker t=2023-12-20T15:11:51.473188882Z level=error msg="Update check failed" error="failed to get latest.json repo from github.com: Get \"https://raw.githubusercontent.com/grafana/grafana/main/latest.json\": read tcp 10.0.0.5:49494->185.199.111.133:443: read: connection reset by peer" duration=139.067715ms
+logger=cleanup t=2023-12-20T15:21:50.744144519Z level=info msg="Completed cleanup jobs" duration=67.511365ms
+logger=grafana.update.checker t=2023-12-20T15:21:51.39058741Z level=error msg="Update check failed" error="failed to get latest.json repo from github.com: Get \"https://raw.githubusercontent.com/grafana/grafana/main/latest.json\": read tcp 10.0.0.5:50076->185.199.109.133:443: read: connection reset by peer" duration=56.381675ms
+logger=cleanup t=2023-12-20T15:31:50.751234635Z level=info msg="Completed cleanup jobs" duration=74.798398ms
+logger=grafana.update.checker t=2023-12-20T15:31:51.39970782Z level=error msg="Update check failed" error="failed to get latest.json repo from github.com: Get \"https://raw.githubusercontent.com/grafana/grafana/main/latest.json\": read tcp 10.0.0.5:46232->185.199.109.133:443: read: connection reset by peer" duration=64.863163ms
+logger=infra.usagestats t=2023-12-20T15:33:00.701672163Z level=info msg="Usage stats are ready to report"
+logger=cleanup t=2023-12-20T15:41:50.723949017Z level=info msg="Completed cleanup jobs" duration=47.196419ms
+logger=grafana.update.checker t=2023-12-20T15:41:51.466906047Z level=info msg="Update check succeeded" duration=131.887301ms
+logger=plugins.update.checker t=2023-12-20T15:41:51.919492441Z level=info msg="Update check succeeded" duration=403.20847ms
+logger=cleanup t=2023-12-20T15:51:50.722102601Z level=info msg="Completed cleanup jobs" duration=45.02734ms
+logger=grafana.update.checker t=2023-12-20T15:51:51.381376484Z level=info msg="Update check succeeded" duration=46.431466ms
+logger=plugins.update.checker t=2023-12-20T15:51:51.884516016Z level=info msg="Update check succeeded" duration=368.689271ms
+logger=cleanup t=2023-12-20T16:01:50.705644156Z level=info msg="Completed cleanup jobs" duration=29.284404ms
+logger=grafana.update.checker t=2023-12-20T16:01:51.50515521Z level=info msg="Update check succeeded" duration=171.136212ms
+logger=plugins.update.checker t=2023-12-20T16:01:51.8471303Z level=info msg="Update check succeeded" duration=331.914105ms
+logger=infra.usagestats t=2023-12-20T16:03:00.703107441Z level=info msg="Usage stats are ready to report"
+logger=cleanup t=2023-12-20T16:11:50.708654298Z level=info msg="Completed cleanup jobs" duration=31.557469ms
+logger=grafana.update.checker t=2023-12-20T16:11:51.37795285Z level=info msg="Update check succeeded" duration=43.300473ms
+logger=plugins.update.checker t=2023-12-20T16:11:51.92824992Z level=info msg="Update check succeeded" duration=411.981732ms
+logger=cleanup t=2023-12-20T16:21:50.70685716Z level=info msg="Completed cleanup jobs" duration=29.829359ms
+logger=grafana.update.checker t=2023-12-20T16:21:51.606935556Z level=info msg="Update check succeeded" duration=272.940126ms
+logger=plugins.update.checker t=2023-12-20T16:21:51.925699156Z level=info msg="Update check succeeded" duration=409.739095ms
+logger=cleanup t=2023-12-20T16:31:50.705655539Z level=info msg="Completed cleanup jobs" duration=28.593557ms
+logger=grafana.update.checker t=2023-12-20T16:31:51.378049728Z level=info msg="Update check succeeded" duration=43.870673ms
+logger=plugins.update.checker t=2023-12-20T16:31:51.827195148Z level=info msg="Update check succeeded" duration=310.919241ms
+logger=infra.usagestats t=2023-12-20T16:33:00.702513654Z level=info msg="Usage stats are ready to report"
+logger=cleanup t=2023-12-20T16:41:50.742722973Z level=info msg="Completed cleanup jobs" duration=65.835401ms
+logger=grafana.update.checker t=2023-12-20T16:41:51.683787261Z level=info msg="Update check succeeded" duration=349.721814ms
+logger=plugins.update.checker t=2023-12-20T16:41:51.923323591Z level=info msg="Update check succeeded" duration=407.474177ms
+logger=cleanup t=2023-12-20T16:51:50.743523617Z level=info msg="Completed cleanup jobs" duration=67.545883ms
+logger=grafana.update.checker t=2023-12-20T16:51:51.501085358Z level=info msg="Update check succeeded" duration=166.252393ms
+logger=plugins.update.checker t=2023-12-20T16:51:51.934429986Z level=info msg="Update check succeeded" duration=418.305612ms
+logger=cleanup t=2023-12-20T17:01:50.70432087Z level=info msg="Completed cleanup jobs" duration=28.120636ms
+logger=grafana.update.checker t=2023-12-20T17:01:51.384143391Z level=info msg="Update check succeeded" duration=50.073111ms
+logger=plugins.update.checker t=2023-12-20T17:01:51.827115157Z level=info msg="Update check succeeded" duration=311.693846ms
+logger=infra.usagestats t=2023-12-20T17:03:00.702728664Z level=info msg="Usage stats are ready to report"
+logger=cleanup t=2023-12-20T17:11:50.705542864Z level=info msg="Completed cleanup jobs" duration=28.484439ms
+logger=grafana.update.checker t=2023-12-20T17:11:51.498958058Z level=info msg="Update check succeeded" duration=164.938688ms
+logger=plugins.update.checker t=2023-12-20T17:11:51.846109146Z level=info msg="Update check succeeded" duration=329.811913ms
+logger=cleanup t=2023-12-20T17:21:50.706333297Z level=info msg="Completed cleanup jobs" duration=29.188397ms
+logger=grafana.update.checker t=2023-12-20T17:21:51.518253712Z level=info msg="Update check succeeded" duration=183.513224ms
+logger=plugins.update.checker t=2023-12-20T17:21:51.827747185Z level=info msg="Update check succeeded" duration=311.469552ms
+logger=cleanup t=2023-12-20T17:31:50.743635491Z level=info msg="Completed cleanup jobs" duration=66.892248ms
+logger=grafana.update.checker t=2023-12-20T17:31:51.501751305Z level=info msg="Update check succeeded" duration=167.624085ms
+logger=plugins.update.checker t=2023-12-20T17:31:51.842459569Z level=info msg="Update check succeeded" duration=326.611503ms
+logger=infra.usagestats t=2023-12-20T17:33:00.701566067Z level=info msg="Usage stats are ready to report"
+logger=cleanup t=2023-12-20T17:41:50.767639879Z level=info msg="Completed cleanup jobs" duration=90.966733ms
+logger=grafana.update.checker t=2023-12-20T17:41:51.538144152Z level=info msg="Update check succeeded" duration=203.996741ms
+logger=plugins.update.checker t=2023-12-20T17:41:51.962942491Z level=info msg="Update check succeeded" duration=447.531294ms
+logger=cleanup t=2023-12-20T17:51:50.766563195Z level=info msg="Completed cleanup jobs" duration=89.715819ms
+logger=grafana.update.checker t=2023-12-20T17:51:51.510178616Z level=info msg="Update check succeeded" duration=176.26226ms
+logger=plugins.update.checker t=2023-12-20T17:51:51.931647418Z level=info msg="Update check succeeded" duration=416.373798ms
+logger=cleanup t=2023-12-20T18:01:50.741276234Z level=info msg="Completed cleanup jobs" duration=64.792601ms
+logger=grafana.update.checker t=2023-12-20T18:01:51.498445398Z level=info msg="Update check succeeded" duration=164.388216ms
+logger=plugins.update.checker t=2023-12-20T18:01:51.828770159Z level=info msg="Update check succeeded" duration=313.340044ms
+logger=infra.usagestats t=2023-12-20T18:03:00.701502918Z level=info msg="Usage stats are ready to report"
+logger=cleanup t=2023-12-20T18:11:50.742332467Z level=info msg="Completed cleanup jobs" duration=66.289793ms
+logger=grafana.update.checker t=2023-12-20T18:11:51.499845208Z level=info msg="Update check succeeded" duration=164.963452ms
+logger=plugins.update.checker t=2023-12-20T18:11:51.925566665Z level=info msg="Update check succeeded" duration=409.134151ms
+logger=cleanup t=2023-12-20T18:21:50.705904526Z level=info msg="Completed cleanup jobs" duration=29.714784ms
+logger=grafana.update.checker t=2023-12-20T18:21:51.506056697Z level=info msg="Update check succeeded" duration=171.299926ms
+logger=plugins.update.checker t=2023-12-20T18:21:51.932587039Z level=info msg="Update check succeeded" duration=416.366395ms
+logger=server t=2023-12-20T18:23:04.014746901Z level=info msg="Shutdown started" reason="System signal: terminated"
+logger=tracing t=2023-12-20T18:23:04.014911754Z level=info msg="Closing tracing"
+logger=ticker t=2023-12-20T18:23:04.015264161Z level=info msg=stopped last_tick=2023-12-20T18:23:00Z

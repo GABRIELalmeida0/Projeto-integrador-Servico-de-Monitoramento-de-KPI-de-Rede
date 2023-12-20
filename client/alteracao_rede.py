@@ -1,11 +1,10 @@
 import subprocess
 import sys
 
-def __init__(self):
-    subprocess.run(["python3", "show_interfaces.py"])
 
 def alterar_parametros_rede(interface=None, delay=None, jitter=None, loss=None):
-    
+    # try add interface if get a error, then they don't show the error and redirect the error output to stderr
+    subprocess.Popen("tc qdisc add dev eth0 root netem delay 0ms".split(), stdout=subprocess.PIPE, stderr=subprocess.DEVNULL)
     comando = ['tc', 'qdisc', 'change', 'dev', interface]
 
     if delay:
