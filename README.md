@@ -14,7 +14,7 @@ Resumo da proposta
 
 <p>
 <h4>
-Introdução:
+introdução:
 </h4>
 &emsp;&emsp;À medida que os aparelhos eletrônicos vêm ganhando cada vez mais espaço no mercado, o tráfego de multimídia segue aumentando exponencialmente [1]. Dessa forma, até mesmo grandes plataformas como YouTube, Twitch, Netflix, e provedores , exigem cada vez mais atenção à qualidade do streaming oferecido aos seus usuários. Com isso surgiram as métricas subjetivas denominadas de QoE (Qualidade de Experiência), que se concentram em como os usuários percebem a qualidade de um produto ou serviço, já que a satisfação do usuário desempenha um papel significativo na reputação da empresa e na fidelização do cliente. No entanto, quando se usam métricas não objetivas para avaliar o QoE, causa - se um impacto direto na avaliação do vídeo recebido pelo usuário através da rede dessas plataformas. Uma vez que esse tipo de métrica depende de fatores externos, tais como o nível de conhecimento técnico, experiências anteriores, variações culturais e linguísticas ou fatores emocionais do telespectador [2]. Assim, propomos um serviço capaz de monitorar a os Indicadores Chave de Desempenho (KPI) de rede e com base nas Métricas Objetivas fornecer uma perspectiva sobre o QoE do usuário.
 </p>
@@ -73,7 +73,7 @@ Objetivo específicos :<br>
 Sprints:<br>
 </h4>
 
-SPRINT 1 - (Criação do ambiente para extração dos dados.)<br>
+SPRINT 1 - (  Criação do ambiente para extração dos dados. )<br>
 Julio: Criar uma API Flask para a coleta de métricas<br>
 Gabriel: Script com comandos para manipular os parâmetros da rede<br>
  Ruth: Agendamento do crontab para automatizar a alteração do estado da rede<br>
