@@ -1,7 +1,4 @@
 #!/usr/bin/python
-"""
-This is the most simple example to showcase Containernet.
-"""
 from os import *
 from subprocess import Popen
 from containernet.net import Containernet
@@ -10,6 +7,7 @@ from containernet.cli import CLI
 from containernet.link import TCLink
 from mininet.log import info, setLogLevel
 from app import App
+
 
 system("docker stop $(docker ps -aq)")
 system("docker rm $(docker ps -aq)")
@@ -43,11 +41,13 @@ net.build()
 c0.start()
 s1.start( [c0] )
 
+
 d1.popen("./mediamtx")
 
 info('*** Running CLI\n')
 app = App(net, default_url="rtsp://10.0.0.1:8554/launch480p15s")
 app.start_app().run()
+
 CLI(net)
 info('*** Stopping network')
 net.stop()
