@@ -1,6 +1,6 @@
 FROM ubuntu:20.04
 
-RUN apt update && apt install -y cron vim iputils-ping iproute2 python3
+RUN apt update && apt install -y cron vim iputils-ping iproute2 python3 tcpdump python3-pip
 
 WORKDIR /network
 COPY crontab-new.cron /etc/cron.d/crontab.cron
