@@ -559,6 +559,11 @@ paths:
   # path para acessar um path deve-se usar via url
   # HLS -> http://localhost:8888/launch480p/index.m3u8
   # RTSP -> rtsp://localhost:8554/launch480p
+  launch480p15s:	
+    # Campos responsaveis para quando iniciar o servidor realizar a publicação do streaming após o start do server!
+    runOnDemand: ffmpeg -re -i /videos/suttle_launch480p15s.mp4 -c copy -loglevel quiet -f rtsp rtsp://127.0.0.1:$RTSP_PORT/$MTX_PATH
+    runOnDemandRestart: no
+
   launch480p:	
     # Campos responsaveis para quando iniciar o servidor realizar a publicação do streaming após o start do server!
     runOnDemand: ffmpeg -re -i /videos/suttle_launch480p.mp4 -c copy -loglevel quiet -f rtsp rtsp://127.0.0.1:$RTSP_PORT/$MTX_PATH

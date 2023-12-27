@@ -1,8 +1,9 @@
 FROM ubuntu:20.04
 WORKDIR streaming_server
 RUN apt update -y && apt install -y net-tools iputils-ping iproute2 ffmpeg vim python3
+RUN apt install -y python3-pip && pip install ffmpeg-quality-metrics
 COPY  MediaMtx .
 COPY ./videos /videos
+COPY alteracao_rede.py .
 RUN chmod +x mediamtx
-RUN ffmpeg -i /videos/suttle_launch480p.mp4 /videos/suttle_launch480p.yuv
 CMD  ["./mediamtx"]
