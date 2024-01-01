@@ -3,9 +3,10 @@ from os import listdir, mkdir
 from time import sleep
 
 class App():
-    def __init__(self, net, default_url):
+    def __init__(self, net, default_url, save_video=True):
         self.net = net
         self.default_url = default_url
+        self.save_video = save_video
 
     def start_app(self):
         app = Flask("__APP__")
@@ -41,6 +42,11 @@ class App():
                     node.cmd(cmd)
                     sleep(10)
                     print("finalizado!")
+                
+                    print("Excluindo video recebido e finalizando experimento.")
+                    node.cmd(f"chmod 777 -R /save-videos/experiment-{experiment_num}")
+                    if self.save_video is False:
+                        node.cmd(f"rm -rf /save-videos/experiment-{experiment_num}/{video_name}")
                     return f"metrica capturada com sucesso, verifique videos/experiment-{experiment_num}/metrics.txt\n", 200
                 else:
                     return "node not found!\n", 404

@@ -45,7 +45,7 @@ s1.start( [c0] )
 d1.popen("./mediamtx")
 
 info('*** Running CLI\n')
-app = App(net, default_url="rtsp://10.0.0.1:8554/launch480p15s")
+app = App(net, default_url="rtsp://10.0.0.1:8554/launch480p15s", save_video=False)
 app.start_app().run()
 
 CLI(net)
