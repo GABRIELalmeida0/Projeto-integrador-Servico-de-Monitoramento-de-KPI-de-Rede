@@ -11,5 +11,17 @@ list_of_number = np.array(list_of_number)
 
 for request_params in list_of_number:
     print(f"Iniciando requisição: delay={request_params['delay']}, jitter={request_params['jitter']}, loss={request_params['loss']} .")
-    experiment = get("http://localhost:5000/capture_streaming", params=request_params)
-    print("Experimento Finalizado!.")
+    #experiment = get("http://localhost:5000/capture_streaming", params=request_params)
+    #print("Experimento Finalizado!.")
+
+
+
+
+
+
+
+
+
+
+
+

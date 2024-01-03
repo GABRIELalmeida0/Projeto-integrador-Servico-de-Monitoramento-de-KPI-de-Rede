@@ -5,26 +5,30 @@ from os import listdir
 df = pd.DataFrame({"delay": [], "jitter": [], "loss": [], "ssim": []})
 
 for dir in sorted(listdir("videos/"),key=lambda x:int(x.split("-")[-1])):
-    if "metrics.txt" in [file for file in listdir(f"videos/{dir}")]:
+    try:
+        if "metrics.txt" in [file for file in listdir(f"videos/{dir}")]:
+            print(dir)
+            with open(f'videos/{dir}/metrics.txt', 'r') as file:
+                content = file.read()
 
-        with open(f'videos/{dir}/metrics.txt', 'r') as file:
-            content = file.read()
+            start_index = content.find('{')
 
-        start_index = content.find('{')
+            json_content = content[start_index:]
 
-        json_content = content[start_index:]
+            data = json.loads(json_content)
 
-        data = json.loads(json_content)
+            df_ssim = data['global']['ssim']['ssim_avg']
 
-        df_ssim = data['global']['ssim']['ssim_avg']
+            average_value = df_ssim['average']
 
-        average_value = df_ssim['average']
-
-        info_first_line = {info.split("-")[0].strip():info.split("-")[1] for info in content.split('\n')[0].split(",")}
-        info_first_line.update({"ssim":average_value})
+            info_first_line = {info.split("-")[0].strip():info.split("-")[1] for info in content.split('\n')[0].split(",")}
+            info_first_line.update({"ssim":average_value})
 
 
-        df = pd.concat([df,pd.DataFrame([info_first_line])],ignore_index=True)
+            df = pd.concat([df,pd.DataFrame([info_first_line])],ignore_index=True)
+    except json.decoder.JSONDecodeError:
+        continue
+
 df.index.name = "index"
 print(df)
-df.to_csv("ssim_for_mos")
+df.to_csv("ssim_for_mos.csv")
